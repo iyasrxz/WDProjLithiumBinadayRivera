@@ -30,7 +30,7 @@
 #### Yanarteya (P1)
 #### ![Yanarteya](./images/Yanarteya.png)
 #### Serse Bua (P2)
-#### ![Serse Bua](./images/Serse Bua.png)
+#### ![Serse Bua](./images/Serse_Bua.png)
 #### Gajad (P3)
 #### ![Gajad](./images/Gajad.png)
 #### Enchanta (P4)
