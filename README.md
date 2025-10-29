@@ -29,7 +29,7 @@
 #### Yanarteya (P1)
 #### ![Yanarteya](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/411b3e1e719612d22cedcbde75918e34f9496122/images/Yanarteya.png)
 #### Serse Bua (P2)
-#### ![Serse Bua]()
+#### ![Serse Bua](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/f3fe70ad32841a939e5a2a0ecfa049ab724a2cab/images/Serse%20Bua.png)
 #### Gajad (P3)
 #### ![Gajad]()
 #### Enchanta (P4)
