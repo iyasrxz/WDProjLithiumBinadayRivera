@@ -24,6 +24,7 @@
 * We will be using JS in the 6th webpage which is titled Ade aka Ikaw. It is an interactive quiz that determines which land does the person belong in. It is similiar to the "Which Hogwarts House Are You?" quiz, but this time, the choices are Lireo, Adamya, Hatoria, and Sapiro (main kingdoms).
 ******
 ### Wireframes:
+[Wireframe](https://www.canva.com/design/DAG3F6QYVfE/8cudTpAn4JjRwmwoI6iNuQ/edit?utm_content=DAG3F6QYVfE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Avoya (Home Page):
 #### ![Avoya](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/26d170220c2a719e9c527f70e6fc2a082f535c72/images/Avoya.png)
 #### Yanarteya (P1)
@@ -37,4 +38,4 @@
 #### Ade (P5)
 #### ![Ade](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/d38dbd38d9897e90ad3ab68639fcd09f36bc82b5/images/Ade.png)
 #### Sanggunian
-#### ![Sanggunian]()
+#### ![Sanggunian](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/efcbade90f7bbff93b3fcf1751867828d0bd329f/images/Sanggunian.png)
