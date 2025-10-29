@@ -22,3 +22,19 @@
 ******
 ### JS Incorporation
 * We will be using JS in the 6th webpage which is titled Ade aka Ikaw. It is an interactive quiz that determines which land does the person belong in. It is similiar to the "Which Hogwarts House Are You?" quiz, but this time, the choices are Lireo, Adamya, Hatoria, and Sapiro (main kingdoms).
+******
+### Wireframes:
+#### Avoya (Home Page):
+#### ![Avoya]()
+#### Yanarteya (P1)
+#### ![Yanarteya]()
+#### Serse Bua (P2)
+#### ![Serse Bua]()
+#### Gajad (P3)
+#### ![Gajad]()
+#### Enchanta (P4)
+#### ![Enchanta]()
+#### Ade (P5)
+#### ![Ade]()
+#### Sanggunian
+#### ![Sanggunian]()
