@@ -38,4 +38,4 @@
 #### Ade (P5)
 #### ![Ade](./images/Ade.png)
 #### Sanggunian
-#### ![Sanggunian](Sanggunian.png)
+#### ![Sanggunian](./images/Sanggunian.png)
