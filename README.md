@@ -31,7 +31,7 @@
 #### Serse Bua (P2)
 #### ![Serse Bua](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/f3fe70ad32841a939e5a2a0ecfa049ab724a2cab/images/Serse%20Bua.png)
 #### Gajad (P3)
-#### ![Gajad]()
+#### ![Gajad](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/8ba15b58874ee8713e6e7e8e1fbeaedf55fda359/images/Gajad.png)
 #### Enchanta (P4)
 #### ![Enchanta]()
 #### Ade (P5)
