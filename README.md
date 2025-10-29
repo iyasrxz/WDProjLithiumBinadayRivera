@@ -35,6 +35,6 @@
 #### Enchanta (P4)
 #### ![Enchanta](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/fb342744f053e1b8985229818fef0a9cef39b817/images/Enchanta.png)
 #### Ade (P5)
-#### ![Ade]()
+#### ![Ade](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/d38dbd38d9897e90ad3ab68639fcd09f36bc82b5/images/Ade.png)
 #### Sanggunian
 #### ![Sanggunian]()
