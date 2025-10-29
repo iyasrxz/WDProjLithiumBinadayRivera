@@ -26,16 +26,16 @@
 ### Wireframes:
 [Wireframe](https://www.canva.com/design/DAG3F6QYVfE/8cudTpAn4JjRwmwoI6iNuQ/edit?utm_content=DAG3F6QYVfE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Avoya (Home Page):
-#### ![Avoya](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/26d170220c2a719e9c527f70e6fc2a082f535c72/images/Avoya.png)
+#### ![Avoya](./images/Avoya.png)
 #### Yanarteya (P1)
-#### ![Yanarteya](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/411b3e1e719612d22cedcbde75918e34f9496122/images/Yanarteya.png)
+#### ![Yanarteya](./images/Yanarteya.png)
 #### Serse Bua (P2)
-#### ![Serse Bua](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/f3fe70ad32841a939e5a2a0ecfa049ab724a2cab/images/Serse%20Bua.png)
+#### ![Serse Bua](./images/Serse Bua.png)
 #### Gajad (P3)
-#### ![Gajad](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/8ba15b58874ee8713e6e7e8e1fbeaedf55fda359/images/Gajad.png)
+#### ![Gajad](./images/Gajad.png)
 #### Enchanta (P4)
-#### ![Enchanta](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/fb342744f053e1b8985229818fef0a9cef39b817/images/Enchanta.png)
+#### ![Enchanta](./images/Enchanta.png)
 #### Ade (P5)
-#### ![Ade](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/d38dbd38d9897e90ad3ab68639fcd09f36bc82b5/images/Ade.png)
+#### ![Ade](./images/Ade.png)
 #### Sanggunian
-#### ![Sanggunian](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/efcbade90f7bbff93b3fcf1751867828d0bd329f/images/Sanggunian.png)
+#### ![Sanggunian](Sanggunian.png)
