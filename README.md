@@ -18,7 +18,7 @@
 ******
 ### Other Notes:
 - This website is dedicated to the **2016 Encantadia Version**. Although a glimpse of the very past (2005) and present (2025) series will be mentioned, this is centered on the 2016 version.
-- We will be using JS in the 6th webpage which is titled Ade aka Ikaw. It is an interactive quiz that determines which land does the person belong in. It is similiar to the "Which Hogwarts House Are You?" quiz, but this time, the choices are Lireo, Adamya, Hatoria, and Sapiro (main kingdoms).
 - The link to Sanggunian will be placed along the footnote area.
 ******
 ### JS Incorporation
+> We will be using JS in the 6th webpage which is titled Ade aka Ikaw. It is an interactive quiz that determines which land does the person belong in. It is similiar to the "Which Hogwarts House Are You?" quiz, but this time, the choices are Lireo, Adamya, Hatoria, and Sapiro (main kingdoms).
