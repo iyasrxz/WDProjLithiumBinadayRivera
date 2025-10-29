@@ -2,7 +2,7 @@
 ## Eteka Aneya Ivi : Reliving the Realm of 2016 Encantadia
 ******
 ### Logo:
-#### ![Logo](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/9efb0cea2db470cd3471357b86e9bd5c5357f604/images/encantadia_logo.png)
+#### ![Logo](./images/encantadia_logo.png)
 
 ### Description:
 > **“Eteka Aneya Ivi” which translates to “Have you forgotten?” is a website developed by Binaday, Aliya Louise and Rivera, Brianna Aliah to relive the memories of Encantadia’s prime year—2016.** Encantadia is an original Filipino fantasy series produced by GMA, telling the story of four Sang'gres and their journey towards safekeeping of their land. It is a spin-off of the hit Encantadia show that aired in 2005. Many Filipino genZs, including us, grew up on this show—with echoes of laughter, tears, and anger that influenced our imaginations. **Through this website, we will deep dive into the history, lore, characters, and enchanta words.** This is to honor the memories that they have provided several Filipino kids with. They built our childhood, so it is now time for us to build something to appreciate the beauty of our own Philippine craft. **Ivo Live, alaala ng Encantadia!** *(Long live the memory of Encantadia)*
