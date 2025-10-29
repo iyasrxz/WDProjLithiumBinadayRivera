@@ -1,5 +1,6 @@
 # WDProjLithiumBinadayRivera
-## Eteka Aneya Ivi : Reliving the Realm of 2016 Encantadia
+## Eteka Aneya Ivi
+#### Reliving the Realm of 2016 Encantadia
 ******
 ### Logo:
 #### ![Logo](./images/encantadia_logo.png)
