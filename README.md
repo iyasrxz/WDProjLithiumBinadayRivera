@@ -33,7 +33,7 @@
 #### Gajad (P3)
 #### ![Gajad](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/8ba15b58874ee8713e6e7e8e1fbeaedf55fda359/images/Gajad.png)
 #### Enchanta (P4)
-#### ![Enchanta]()
+#### ![Enchanta](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/fb342744f053e1b8985229818fef0a9cef39b817/images/Enchanta.png)
 #### Ade (P5)
 #### ![Ade]()
 #### Sanggunian
