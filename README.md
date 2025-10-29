@@ -18,5 +18,6 @@
 ### Other Notes:
 - This website is dedicated to the **2016 Encantadia Version**. Although a glimpse of the very past (2005) and present (2025) series will be mentioned, this is centered on the 2016 version.
 - The 6th webpage will be centered on JS usage.
+- The link to Sanggunian will be placed along the footnote area.
 ******
 ### JS Incorporation
