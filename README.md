@@ -25,7 +25,7 @@
 ******
 ### Wireframes:
 #### Avoya (Home Page):
-#### ![Avoya]()
+#### ![Avoya](https://github.com/iyasrxz/WDProjLithiumBinadayRivera/blob/e40fc1091e1f5e8cabcf0d22b1f5ea5b160a4df4/images/Avoya.png)
 #### Yanarteya (P1)
 #### ![Yanarteya]()
 #### Serse Bua (P2)
