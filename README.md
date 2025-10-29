@@ -10,7 +10,7 @@
 * **Avoya: A voyage.** This is the *homepage*. It will showcase *the map, logo, elements, and navigation to other webpages.*
 * **Yanarteya: The past.** It will contain the *website description and the history of Encantadia*—from 2005 to 2016 with a glimpse of the on-going chronicles. Here, pictures, videos, and context will be provided.
 * **Serse Bua: Vision.** From the conflict to the resolutions—this webpage tackles *all the lore of 2016 Encantadia.*
-* **Gajad: Natives.** In this webpage, the *original and notable characters* of the 2016 series, along with their abilities and powers, will be tackled. It will not include the new gem-holders.
+* **Gajad: Natives.** In this webpage, the *original and notable characters* of the 2016 series, along with their abilities and powers, will be tackled. It will include an interactive family tree of the the sang'gres wherein when you hover over their photos, the description will pop up.
 * **Enchanta: The language.** A break down of the Encantadia language. This will serve as a *dictionary*.
 * **Ade: You.** An *interactive quiz* that will determine which kingdom you belong in.
 * **Sanggunian: Sources.** This will contain all the *sources* used for the project.
