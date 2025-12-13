@@ -1,0 +1,74 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('/assets/background2.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-blend-mode:difference;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 100px;
+}
+.navbar a{
+    color:hsl(28, 48%, 39%);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.navbar a:hover{
+    background-color:hsla(28, 48%, 39%, 0.217);
+}
+.navbar li{
+    float: left;
+}
+.navbar li img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+.text{
+    flex: 1;
+}
+.intro iframe{
+    display: block;
+    margin-top: 7%;
+}
+.intro p{
+    font-size: 20px;
+    color: hsl(28, 48%, 39%);
+    margin-top: 7%;
+}
+.container{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin:5px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 6%;
+    text-decoration: none;
+    font-size:12.5px;
+}
