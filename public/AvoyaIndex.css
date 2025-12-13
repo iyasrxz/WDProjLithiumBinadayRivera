@@ -16,17 +16,25 @@ body{
     overflow: hidden;
 }
 .navbar a{
-    color:white;
+    color:hsl(28, 48%, 39%);
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
 }
 .navbar a:hover{
-    background-color:hsl(28, 48%, 39%);
+    background-color:hsl(28, 27%, 74%);
 }
 .navbar li{
     float: left;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .card1{
     display: flex;
@@ -41,19 +49,19 @@ body{
     margin-top: 35%;
     text-decoration: none;
 }
-a:link{
+a.card1:link{
     text-decoration: none;
     color: black;
 }
-a:visited{
+a.card1:visited{
     text-decoration: none;
     color: black;
 }
-a:active{
+a.card1:active{
     text-decoration: none;
     color: black;
 }
-a:hover{
+a.card1:hover{
     text-decoration: none;
     color: black;
 }
