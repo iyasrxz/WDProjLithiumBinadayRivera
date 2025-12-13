@@ -14,6 +14,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    height: 100px;
 }
 .navbar a{
     color:hsl(28, 48%, 39%);
@@ -21,14 +22,21 @@ body{
     padding: 15px;
     display: block;
     text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
 }
 .navbar a:hover{
-    background-color:hsl(28, 27%, 74%);
+    background-color:hsla(28, 48%, 39%, 0.217);
 }
 .navbar li{
     float: left;
 }
+.navbar li img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
 .container{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +71,7 @@ a.card1:active{
 }
 a.card1:hover{
     text-decoration: none;
-    color: black;
+    color: hsl(28, 48%, 39%);
 }
 .card1 img {
   width: 300px;
@@ -81,4 +89,58 @@ a.card1:hover{
 }
 .cardcontent{
     flex-direction: column;
+}
+.card2{
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin:5px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin-top: 0%;
+    text-decoration: none;
+}
+a.card2:link{
+    text-decoration: none;
+    color: black;
+}
+a.card2:visited{
+    text-decoration: none;
+    color: black;
+}
+a.card2:active{
+    text-decoration: none;
+    color: black;
+}
+a.card2:hover{
+    text-decoration: none;
+    color: hsl(28, 48%, 39%);
+}
+.card2 img {
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+.card2:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+  color:hsl(28, 48%, 39%);
+}
+
+.footer{
+    text-align: left;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: hsl(28, 48%, 39%);
+}
+.footer li{
+    text-decoration: none;
+    color: hsl(28, 48%, 39%);
 }
