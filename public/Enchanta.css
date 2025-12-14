@@ -112,6 +112,38 @@ main{
       .right-column { gap: 20px; }
       .box { height: auto; max-height: 360px; }
 }
+.numbers-table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: separate; 
+    border-spacing: 0;
+    border: 1px solid #b07a2a;
+    border-radius: 15px;
+    overflow: hidden; 
+    background-color: #fbf5ea;
+}    
+th, td {
+    border: 1px solid #b07a2a;
+    padding: 12px 15px;
+    text-align: left;
+    background-color: #fbf5ea;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+tr:hover {
+    background-color: #fbf5ea;
+    cursor: pointer;
+    text-shadow: 0 0 8px #d4b483;
+    box-shadow: 0 0 12px #d4b483;
+    transition: 0.3s;
+}
+tr:active {
+    background-color: #fbf5ea;
+    color: rgba(0, 0, 0, 0.434);
+    text-shadow: 0 0 8px #d4b483;
+    box-shadow: 0 0 12px #d4b483;
+    transition: 0.1s;
+}
 .footer{
     text-align: left;
     padding: 0px;
