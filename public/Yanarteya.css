@@ -2,7 +2,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url('../assets/bg.png');
+    background-image: url('../assets/yiz.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-blend-mode:difference;
@@ -41,7 +41,7 @@ body{
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 10%;
+    margin-top: 3%;
     position: relative;
 }
 .text{
@@ -49,12 +49,12 @@ body{
 }
 .intro iframe{
     display: block;
-    margin-top: 10%;
+    margin-top: 3%;
     position: relative
 }
 .intro p{
     font-size: 20px;
-    color: hsl(28, 48%, 39%);
+    color: hsl(0, 0%, 0%);
     margin-top: 3%;
 }
 .container{
