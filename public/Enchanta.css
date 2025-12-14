@@ -52,6 +52,7 @@ main{
       margin-bottom: 20px;
 }
 .intro p{
+      font-size: 20px;
       max-width: 900px;
       margin: auto;
       line-height: 1.6;
