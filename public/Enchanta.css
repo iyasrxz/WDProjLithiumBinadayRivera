@@ -1,0 +1,128 @@
+html,body{
+    height:100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../assets/yiz.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-blend-mode:difference;
+}
+main{
+      padding: 50px 20px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 100px;
+}
+.navbar a{
+    color:hsl(28, 48%, 39%);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.navbar a:hover{
+    background-color:hsla(28, 48%, 39%, 0.217);
+}
+.navbar li{
+    float: left;
+}
+.navbar li img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.intro{
+      background: #fbf5ea;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 15px;
+      border-top: 2px solid #d4b483;
+      border-bottom: 2px solid #d4b483;
+}
+.intro h1 {
+      font-size: 48px;
+      color: #b07a2a;
+      margin-bottom: 20px;
+}
+.intro p{
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+}
+.grid{
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+}
+.box {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 22px;
+      padding: 20px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+}   
+.box:visited{
+    text-decoration: none;
+    color: black;
+}
+.box:active{
+    text-decoration: none;
+    color: black;
+}
+.box:hover{
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+.box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+    color:hwb(27 0% 91%);
+}
+.box h3{
+      color: #9a6b2f;
+      margin-bottom: 12px;
+}
+.scroll-content{
+      overflow-y: auto;
+      padding-right: 10px;
+}
+.scroll-content ul{
+      list-style: disc;
+      padding-left: 20px;
+}
+.scroll-content li{
+      margin-bottom: 8px;
+}
+.right-column{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+}
+@media (max-width: 900px){
+      .grid { grid-template-columns: 1fr; }
+      .right-column { gap: 20px; }
+      .box { height: auto; max-height: 360px; }
+}
+.footer{
+    text-align: left;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: hsl(28, 48%, 39%);
+}
+.footer li{
+    text-decoration: none;
+    color: hsl(28, 48%, 39%);
+}
