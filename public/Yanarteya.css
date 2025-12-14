@@ -41,14 +41,16 @@ body{
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 10%;
+    position: relative;
 }
 .text{
     flex: 1;
 }
 .intro iframe{
     display: block;
-    margin-top: 7%;
+    margin-top: 10%;
+    position: relative
 }
 .intro p{
     font-size: 20px;
