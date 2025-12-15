@@ -60,9 +60,9 @@ h3{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
     scroll-snap-align: start;
     transition: background-color 0.5s ease;
+    color: white;
 }
 #first{
     background-image: url('../assets/digmaan.jpg');
