@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, serif;
+  background: #f2e1bf;
+}
+html, body{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-blend-mode:difference;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 100px;
+}
+.navbar a{
+    color:hsl(28, 48%, 39%);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.navbar a:hover{
+    background-color:hsla(28, 48%, 39%, 0.217);
+}
+.navbar li{
+    float: left;
+}
+.navbar li img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 3px;
+    color: #9a6a2f;
+}
+
+
+.cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  gap: 30px;
+  justify-content: center;
+}
+
+
+.card {
+  perspective: 1200px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+  cursor: pointer;
+}
+
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card-back {
+  background: #a8742a;
+  color: #fff;
+  padding: 25px;
+  transform: rotateY(180deg);
+border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover > .card-inner {
+   cursor: pointer;
+   transform:rotateY(180deg);
+}
+
+.card-text {
+  margin-top: 15px;
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 5px;
+}
+
+.card-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-text::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+.card-text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.footer{
+    text-align: left;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: hsl(28, 48%, 39%);
+}
+.footer li{
+    text-decoration: none;
+    color: hsl(28, 48%, 39%);
+}
