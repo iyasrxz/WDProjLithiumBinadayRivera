@@ -57,12 +57,12 @@ h3{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     scroll-snap-align: start;
     transition: background-color 0.5s ease;
     color: white;
+    justify-content: center;
 }
 #first{
     background-image: url('../assets/digmaan.jpg');
