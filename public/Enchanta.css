@@ -162,6 +162,24 @@ tr:active {
     box-shadow: 0 0 12px #d4b483;
     transition: 0.1s;
 }
+
+/*Styles the links in box IV*/
+.iv-links a:hover {
+color: #b85c1e;
+text-decoration: underline;
+}
+
+/*Styles the Enchan images*/
+.enchan-img {
+width: 100%;
+max-width: 100%;
+height: auto;
+margin: 12px auto 0;
+border-radius: 14px;
+display: block;
+object-fit: contain;
+}
+
 /*Styles the footer*/
 .footer{
     text-align: left;

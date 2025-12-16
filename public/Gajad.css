@@ -1,3 +1,4 @@
+/* General style of the webpage */
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,14 @@ html, body{
     background-blend-mode:difference;
 }
 
+.title {
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 3px;
+    color: #9a6a2f;
+}
+
+/*Styles the navigation bar*/
 .navbar ul{
     display: flex;
     gap: 14px;
@@ -57,13 +66,7 @@ html, body{
     margin-left: 10px;
 }
 
-.title {
-    text-align: center;
-    margin: 50px 0;
-    letter-spacing: 3px;
-    color: #9a6a2f;
-}
-
+/* Styles the filter button container */
 .filters {
   display: flex;
   justify-content: center;
@@ -92,6 +95,7 @@ html, body{
   color: #fff;
 }
 
+/* Styles the card grid layout */
 .cards {
   margin: 0 auto;
   display: grid;
@@ -126,12 +130,14 @@ html, body{
   overflow: hidden;
 }
 
+/* Styles the image on the front of the card */
 .card-front img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Styles the back of the card */
 .card-back {
   background: rgb(164, 131, 86);
   color: #fff;
@@ -171,6 +177,7 @@ html, body{
   display: none !important;
 }
 
+/*Styles the footer*/
 .footer{
     text-align: left;
     padding: 0px;
