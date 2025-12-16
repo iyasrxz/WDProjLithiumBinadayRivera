@@ -1,3 +1,4 @@
+/* General look of the webpage */
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
@@ -7,7 +8,7 @@ body{
     background-repeat:no-repeat;
     background-blend-mode:difference;
 }
-
+/* Styles the navigation bar */ 
 .navbar ul{
     display: flex;
     gap: 14px;
@@ -41,6 +42,7 @@ body{
     margin-top: 10px;
     margin-left: 10px;
 }
+/* Styles the class "container" */
 .container{
     padding: 50px 20px;
     height: 100vh;
@@ -48,6 +50,7 @@ body{
     scroll-snap-type: y mandatory;
     margin: none;
 }
+/* Styles the class "card" */
 .card{
    border: 1px solid #ccc;
    border-radius: 8px;
