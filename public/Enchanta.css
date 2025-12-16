@@ -1,3 +1,4 @@
+/* General style of the webpage */
 html,body{
     height:100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -11,6 +12,7 @@ html,body{
 main{
       padding: 50px 20px;
 }
+/*Styles the navigation bar*/
 .navbar ul{
     display: flex;
     gap: 14px;
@@ -44,6 +46,7 @@ main{
     margin-top: 10px;
     margin-left: 10px;
 }
+/*Styles the class "intro"*/
 .intro{
       background: #fbf5ea;
       text-align: center;
@@ -64,6 +67,7 @@ main{
       line-height: 1.6;
       text-align: justify;
 }
+/*Styles the class "grid"*/
 .grid{
       max-width: 1100px;
       margin: auto;
@@ -71,6 +75,7 @@ main{
       grid-template-columns: 1fr 1fr;
       gap: 30px;
 }
+/*Styles the class "box"*/
 .box {
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 22px;
@@ -79,7 +84,7 @@ main{
       display: flex;
       flex-direction: column;
 }   
-.box:visited{
+.box:visited{ 
     text-decoration: none;
     color: black;
 }
@@ -99,6 +104,7 @@ main{
       color: #9a6b2f;
       margin-bottom: 12px;
 }
+/*Styles the class "scroll" */
 .scroll-content{
       overflow-y: auto;
       padding-right: 10px;
@@ -110,6 +116,7 @@ main{
 .scroll-content li{
       margin-bottom: 8px;
 }
+/*Styles the class "right-column"*/
 .right-column{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -120,6 +127,7 @@ main{
       .right-column { gap: 20px; }
       .box { height: auto; max-height: 360px; }
 }
+/*Styles the class "numbers-table"*/
 .numbers-table {
     width: 50%;
     margin: 30px auto;
@@ -129,7 +137,8 @@ main{
     border-radius: 15px;
     overflow: hidden; 
     background-color: #fbf5ea;
-}    
+}  
+/*Formats the table */  
 th, td {
     border: 1px solid #b07a2a;
     padding: 12px 15px;
@@ -152,6 +161,7 @@ tr:active {
     box-shadow: 0 0 12px #d4b483;
     transition: 0.1s;
 }
+/*Styles the footer*/
 .footer{
     text-align: left;
     padding: 0px;
