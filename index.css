@@ -1,3 +1,4 @@
+/* General look of the webpage */
 html, body{
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,7 +10,7 @@ html, body{
     background-blend-mode:difference;
     background-position:inherit;
 }
-
+/* Specifies the look of the navigation bar */
 .navbar ul{
     display: flex;
     gap: 14px;
@@ -43,6 +44,7 @@ html, body{
     margin-top: 10px;
     margin-left: 10px;
 }
+/* Specifies the format for the cards */
 .container{
     position: absolute;
     display: flex;
@@ -52,6 +54,7 @@ html, body{
     gap: 20px;
     flex-wrap: wrap;
 }
+/* Specific look of each cards */
 .card1{
     display: flex;
     align-items: flex-start;
@@ -65,6 +68,7 @@ html, body{
     margin-top: 35%;
     text-decoration: none;
 }
+/* Format of the card when clicked to move to other webpages */
 a.card1:link{
     text-decoration: none;
     color: black;
@@ -91,6 +95,7 @@ a.card1:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
   color:hsl(28, 48%, 39%);
 }
+/* Specifiec the look of the content inside the cards */
 .cardcontent h3{
     margin-top: 0;
     color: hsl(28, 48%, 39%);
@@ -98,6 +103,7 @@ a.card1:hover{
 .cardcontent{
     flex-direction: column;
 }
+/* Specific look for the remaining cards */
 .card2{
     display: flex;
     align-items: flex-start;
@@ -111,6 +117,7 @@ a.card1:hover{
     margin-top: 0%;
     text-decoration: none;
 }
+/* Format for when the remaining cards are clicked to move to other webpages */
 a.card2:link{
     text-decoration: none;
     color: black;
@@ -137,7 +144,7 @@ a.card2:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
   color:hsl(28, 48%, 39%);
 }
-
+/* Specifies the look of the footer */
 .footer{
     text-align: left;
     padding: 0px;
