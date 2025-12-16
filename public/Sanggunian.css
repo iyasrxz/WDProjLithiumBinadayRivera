@@ -9,7 +9,10 @@ body{
 }
 
 .navbar ul{
+    display: flex;
+    gap: 14px;
     list-style-type: none;
+    flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0px;
     padding: 0px;
@@ -17,13 +20,16 @@ body{
     height: 100px;
 }
 .navbar a{
-    color:hsl(28, 48%, 39%);
+    background: #e7d2a6;
+    color:hsl(28, 48%, 38%);
+    border-radius: 20px;
     text-decoration: none;
-    padding: 15px;
+    padding: 8px 18px;
     display: block;
     text-align: center;
-    font-size: 22px;
-    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 .navbar a:hover{
     background-color:hsla(28, 48%, 39%, 0.217);
