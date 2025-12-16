@@ -101,7 +101,7 @@ body{
 figure{
     position: relative;
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden; /*Hides the link until hovered over*/
 }
 .card figure img{
     width: 100%;
