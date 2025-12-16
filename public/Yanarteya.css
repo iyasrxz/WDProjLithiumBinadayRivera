@@ -1,3 +1,4 @@
+/*General look of the webpage*/
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
@@ -7,7 +8,7 @@ body{
     background-repeat:no-repeat;
     background-blend-mode:difference;
 }
-
+/*Styles the navigation*/ 
 .navbar ul{
     display: flex;
     gap: 14px;
@@ -46,6 +47,7 @@ body{
     margin-left: 10px;
 }
 
+/*Styles the class "intro"*/
 .intro{
     background: #fbf5ea;
     text-align: center;
@@ -61,11 +63,11 @@ body{
     margin-top: 3%;
     position: relative;
 }
-
+/*Style of the text*/
 .text{
     flex: 1;
 }
-
+/* More style and format for the class "intro" */
 .intro iframe{
     display: block;
     margin-top: 3%;
@@ -77,7 +79,7 @@ body{
     color: hsl(0, 0%, 0%);
     margin-top: 3%;
 }
-
+/*Styles the class "container"*/
 .container{
    display: flex;
    gap: 20px;
@@ -85,7 +87,7 @@ body{
    margin: 5px;
     justify-content: center;
 }
-
+/*Specific look for the cards inside the class "card" */
 .card{
    border: 1px solid #ccc;
    border-radius: 8px;
@@ -95,6 +97,7 @@ body{
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    margin-top: 16px;
 }
+/*Format styling for the caption*/
 figure{
     position: relative;
     justify-content: center;
@@ -127,12 +130,13 @@ figure:hover figcaption{
     opacity: 1;
     transform: translateY(0);
 }
+/*Styles the link of the caption*/
 figcaption a{
     text-decoration: none;
     color: hsl(28, 48%, 39%);
 
 }
-
+/*Specific styles for the cards*/
 .card h3{
     color: hsl(28, 48%, 39%);
     text-align: center;
@@ -142,7 +146,7 @@ figcaption a{
     color: #333;
     text-align: justify;
 }
-
+/*Format styling for the footer*/
 .footer{
     text-align: left;
     padding: 0px;
