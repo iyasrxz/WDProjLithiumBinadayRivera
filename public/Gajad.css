@@ -133,11 +133,11 @@ html, body{
 }
 
 .card-back {
-  background: #e2ab5f;
+  background: rgb(164, 131, 86);
   color: #fff;
   padding: 25px;
   transform: rotateY(180deg);
-border-radius: 25px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
 }

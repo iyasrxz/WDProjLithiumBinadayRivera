@@ -122,6 +122,7 @@ main{
       grid-template-columns: 1fr 1fr;
       gap: 30px;
 }
+/*Media query for screens 900px wide and below (tablets and mobile devices)*/
 @media (max-width: 900px){
       .grid { grid-template-columns: 1fr; }
       .right-column { gap: 20px; }
