@@ -1,3 +1,4 @@
+/* General format */
 html, body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
@@ -12,7 +13,7 @@ html, body{
     min-height: 100vh;
     scroll-behavior: smooth;
 }
-
+/* Format for the navigation/navbar */
 .navbar ul{
     display: flex;
     gap: 14px;
@@ -46,6 +47,7 @@ html, body{
     margin-top: 10px;
     margin-left: 10px;
 }
+/*Specificies the look for all h3 element*/
 h3{
     text-align: center;
     margin-top: 2%;
@@ -53,12 +55,14 @@ h3{
     color: rgb(255, 255, 255);
     font-size: 250%;
 }
+/* Styles the class "container" */
 .container{
     padding: 50px 20px;
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
+/* Styles the class "section" */
 .section{
     height: 100%;
     display: flex;
@@ -70,6 +74,7 @@ h3{
     color: white;
     justify-content: center;
 }
+/*Sets the background and style for each separator*/
 #first{
     background-image: url('../assets/digmaan.jpg');
     background-size: cover;
@@ -105,6 +110,7 @@ h3{
     background-position: center;
     opacity: 0.8;
 }
+/* Creates the transition and format for the texts */
 section h1, section p {
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     transform: translateY(20px);
@@ -118,6 +124,7 @@ section h1, section p {
     transform: translateY(0);
     opacity: 1;
 }
+/* Styles the footer */
 .footer{
     text-align: left;
     padding: 0px;
