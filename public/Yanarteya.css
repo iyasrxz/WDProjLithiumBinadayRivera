@@ -79,13 +79,42 @@ body{
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    margin-top: 16px;
 }
-.card img{
+figure{
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+.card figure img{
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
-    display:block;
+    display:flex;
+    align-items: center;
     margin: 0 auto;
+    justify-content: center;
+}
+figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    color: hsl(28, 48%, 39%);
+    padding: 10px;
+    text-align: center;
+    opacity: 0; 
+    transform: translateY(100%); 
+    transition: all 0.3s ease; 
+}
+figure:hover figcaption{
+    opacity: 1;
+    transform: translateY(0);
+}
+figcaption a{
+    text-decoration: none;
+    color: hsl(28, 48%, 39%);
+
 }
 .card h3{
     color: hsl(28, 48%, 39%);
