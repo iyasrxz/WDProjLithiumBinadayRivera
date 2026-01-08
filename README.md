@@ -3,7 +3,7 @@
 #### Reliving the Realm of 2016 Encantadia
 ******
 ### Logo:
-#### ![Logo](./images/encantadia_logo.png)
+#### ![Logo](./assets/encantadia_logo.png)
 
 ### Description:
 > **“Eteka Aneya Ivi” which translates to “Have you forgotten?” is a website developed by Binaday, Aliya Louise and Rivera, Brianna Aliah to relive the memories of Encantadia’s prime year—2016.** Encantadia is an original Filipino fantasy series produced by GMA, telling the story of four Sang'gres and their journey towards safekeeping of their land. It is a spin-off of the hit Encantadia show that aired in 2005. Many Filipino genZs, including us, grew up on this show—with echoes of laughter, tears, and anger that influenced our imaginations. **Through this website, we will deep dive into the history, lore, characters, and enchanta words.** This is to honor the memories that they have provided several Filipino kids with. They built our childhood, so it is now time for us to build something to appreciate the beauty of our own Philippine craft. **Ivo Live, alaala ng Encantadia!** *(Long live the memory of Encantadia)*
@@ -25,7 +25,7 @@
 * We will be using JS in the 6th webpage which is titled Ade aka Ikaw. It is an interactive quiz that determines which land does the person belong in. It is similiar to the "Which Hogwarts House Are You?" quiz, but this time, the choices are Lireo, Adamya, Hatoria, and Sapiro (main kingdoms).
 ******
 ### Wireframes:
-[Wireframe](https://www.canva.com/design/DAG3F6QYVfE/8cudTpAn4JjRwmwoI6iNuQ/edit?utm_content=DAG3F6QYVfE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Wireframes](https://www.canva.com/design/DAG3F6QYVfE/8cudTpAn4JjRwmwoI6iNuQ/edit?utm_content=DAG3F6QYVfE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Avoya (Home Page):
 #### ![Avoya](./wireframes/Avoya.png)
 #### Yanarteya (P1)
@@ -42,3 +42,11 @@
 #### ![Ade](./wireframes/Ade.png)
 #### Sanggunian
 #### ![Sanggunian](./wireframes/Sanggunian.png)
+******
+
+# Q3 Project Poposal Update Plan
+### HTML Form:
+>
+******
+### Updated Wireframes:
+[Wireframes](https://www.canva.com/design/DAG9u0QO_z8/k44gLPl9cvsCLM--HbEZag/edit?utm_content=DAG9u0QO_z8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
