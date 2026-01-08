@@ -29,7 +29,7 @@
 #### Avoya (Home Page):
 #### ![Avoya](./wireframes/Avoya.png)
 #### Yanarteya (P1)
-#### ![Yanarteya](.wireframes/images/Yanarteya.png)
+#### ![Yanarteya](./wireframes/Yanarteya.png)
 #### Serse Bua (P2)
 #### ![Serse Bua](./wireframes/Serse_Bua.png)
 #### Gajad(1) (P3)
