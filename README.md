@@ -27,7 +27,7 @@
 ### Wireframes:
 [Wireframe](https://www.canva.com/design/DAG3F6QYVfE/8cudTpAn4JjRwmwoI6iNuQ/edit?utm_content=DAG3F6QYVfE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Avoya (Home Page):
-#### ![Avoya](/.assets/Avoya.png)
+#### ![Avoya](./assets/Avoya.png)
 #### Yanarteya (P1)
 #### ![Yanarteya](.assets/images/Yanarteya.png)
 #### Serse Bua (P2)
