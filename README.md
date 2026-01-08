@@ -27,11 +27,11 @@
 ### Wireframes:
 [Wireframe](https://www.canva.com/design/DAG3F6QYVfE/8cudTpAn4JjRwmwoI6iNuQ/edit?utm_content=DAG3F6QYVfE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Avoya (Home Page):
-#### ![Avoya](./images/Avoya.png)
+#### ![Avoya](.assets/images/Avoya.png)
 #### Yanarteya (P1)
-#### ![Yanarteya](./images/Yanarteya.png)
+#### ![Yanarteya](.assets/images/Yanarteya.png)
 #### Serse Bua (P2)
-#### ![Serse Bua](./images/Serse_Bua.png)
+#### ![Serse Bua](.assets/images/Serse_Bua.png)
 #### Gajad(1) (P3)
 #### ![Gajad](./images/Gajad(1).png)
 #### Gajad(2) (P3)
