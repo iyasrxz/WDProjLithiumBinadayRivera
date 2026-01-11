@@ -87,3 +87,31 @@ Registered users also gain access to the Enchanta Language Quiz, which is divide
 *****
 ### Updated Wireframes:
 [Wireframes](https://www.canva.com/design/DAG9u0QO_z8/k44gLPl9cvsCLM--HbEZag/edit?utm_content=DAG9u0QO_z8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+#### Create Account
+#### ![Create Account](./wireframes/(1)Create_Account.png),
+#### Sang'gre Pirena
+#### ![sang'gre Pirena](./wireframes/Sang'gre_Pirena.png)
+#### Sang'gre Amihan
+#### ![sang'gre Amihan](./wireframes/Sang'gre_Amihan.png)
+#### Sang'gre Alena
+#### ![sang'gre Alena](./wireframes/Sang'gre_Alena.png)
+#### Sang'gre Danaya
+#### ![sang'gre Danaya](./wireframes/Sang'gre_Danaya.png)
+#### Log In
+#### ![Log In](./wireframes/(2)Log_In.png)
+#### Avoya (Home Page)
+#### ![Avoya](./wireframes/(Updated)Avoya.png)
+#### Yanarteya
+#### ![Yanarteya](./wireframes/(Updated)Yanarteya.png)
+#### Serse Bua
+#### ![Serse Bua](./wireframes/(Updated)Serse_Bua.png)
+#### Gajad(1)
+#### ![Gajad](./wireframes/(Updated)Gajad(1).png)
+#### Gajad(2)
+#### ![Gajad](./wireframes/(Updated)Gajad(2).png)
+#### Enchanta(1)
+#### ![Enchanta](./wireframes/(1)(Updated)Enchanta.png)
+#### Enchanta(2)
+#### ![Enchanta](./wireframes/(2)(Updated)Enchanta.png)
+#### Sanggunian
+#### ![Sanggunian](./wireframes/(Updated)Sanggunian.png)
