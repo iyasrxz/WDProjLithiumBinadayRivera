@@ -71,7 +71,7 @@ Registered users also gain access to the Enchanta Language Quiz, which is divide
      - 2nd Part: Contains animations as well and acts as the introduction to the main brilyantes.
      - 3rd Part: Main navigation to the other webpages.
 
-* **Yanarteya**: It will contain the website description and the history of Encantadia—from 2005 to 2016 with a glimpse of the on-going chronicles. Here, pictures, videos, and context will be provided.
+* **Yanarteya**: The past. It contains the history of Encantadia from 2005 to 2016 with a glimpse of the on-going chronicles.
 
 * **Serse Bua**: Vision. This webpage tackles all the lore of 2016 encantadia. The new design includes another continuous webpage style. There are five sub-pages, each with their own topics. 
 
@@ -79,9 +79,9 @@ Registered users also gain access to the Enchanta Language Quiz, which is divide
 
      - When you go to the webpage, several cards with photos of characters will show up. Once you hover over these cards, simple lores and character origin will show. You can also choose to view them by four categories:          All of them, Bathalas only, Royalty only, and Side Characters only. 
 
-* **Enchanta**: The language. This is Encantadia’s dictionary. A new addition to this webpage is the Enchanta quiz whose progress is noted by the log-in feature. 
+* **Enchanta**: The language. This is Encantadia’s dictionary. A new addition to this webpage is the Enchanta quiz wherein the progress is accounted by the log-in feature.
 
-     - This is also a continuous webpage wherein the first page asks wherein the first sub-page asks the user if they plan to take the easy, medium, or hard difficulty. The second one is the main quiz while the third one         is the summary of the entire quiz taken.
+     - This is also a continuous webpage wherein the first sub-page asks the user if they plan to take the easy, medium, or hard quiz difficulty. The second one is the main quiz while the third is the summary of the              entire quiz taken.
 
 * **Sanggunian**: Contains all the sources of the website
 *****
