@@ -63,7 +63,7 @@ Registered users also gain access to the Enchanta Language Quiz, which is divide
 
      - Sang’gre Danaya: A character lore specific to Sang’gre Danaya, the host of the earth gem. 
 
-* **Log In**: Allows the user to come back to their account — saving their progress for the enchanta quiz.
+* **Log In**: Allows the user to come back to their account — saving their progress for the enchanta quiz. Log-in also saves the theme picked from the sign up or the themes acquired from answering the enchanta quiz.
 
 * **Avoya**: The homepage. The new outline houses a continuous design wherein every scroll shows you a new aspect of the webpage. 
 
@@ -79,7 +79,7 @@ Registered users also gain access to the Enchanta Language Quiz, which is divide
 
      - When you go to the webpage, several cards with photos of characters will show up. Once you hover over these cards, simple lores and character origin will show. You can also choose to view them by four categories:          All of them, Bathalas only, Royalty only, and Side Characters only. 
 
-* **Enchanta**: The language. This is Encantadia’s dictionary. A new addition to this webpage is the Enchanta quiz wherein the progress is accounted by the log-in feature.
+* **Enchanta**: The language. This is Encantadia’s dictionary. A new addition to this webpage is the Enchanta quiz wherein the progress is accounted by the log-in feature. The points obtained from answering the quiz can be used to acquire more themes.
 
      - This is also a continuous webpage wherein the first sub-page asks the user if they plan to take the easy, medium, or hard quiz difficulty. The second one is the main quiz while the third is the summary of the              entire quiz taken.
 
