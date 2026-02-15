@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""width=device-width, intial-scale="1.0">
+    <meta name="description" content="2Q Portfolio">
+    <meta name="keywords" content="2Q, Portfolio, Projects, Web Development">
+    <meta name="author" content="RIVERA, Brianna Aliah B. & BINADAY, Aliya Louise">
+    <title>Eteka Aneya Ivi</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="icon" href="assets/encantadia_logo.png" type="image/png">
+   </head>
+   <body>
+      <div class = "container">
+         <h2>Sign Up</h2>
+         <input id = "username" type="text" placeholder="Username">
+         <input id = "pass" type="password" placeholder="Password">
+         
+         <select id = "choice">
+            <option value="" disabled selected>Select Kingdom</option>
+            <option value="Hathoria">Hathoria</option>
+            <option value="Lireo">Lireo</option>
+            <option value="Sapiro">Sapiro</option>
+            <option value="Adamya">Adamya</option>
+         </select>      
+
+         <button onclick = "signUp()">Sign Up</button>
+         <hr>
+
+         <h2> Log In </h2>
+         <input id = "usernameLogin" type="text" placeholder="Username">
+         <input id = "passLogin" type="password" placeholder="Password">
+         <button onclick = "logIn()">Log In</button>
+
+         <div id = "point">
+            <h3> Avisala! <span id="displayUser"></span></h3>
+            <p> Points: <span id="pointsDisplay">0</span></p>
+         </div>
+
+         <h4> Customize - 20 points minimum </h4>
+         <button onclick = "customize('Hathoria')">Hathoria</button>
+         <button onclick = "customize('Lireo')">Lireo</button>
+         <button onclick = "customize('Sapiro')">Sapiro</button>
+         <button onclick = "customize('Adamya')">Adamya</button>
+         
+         <div id="customBox" class = "customBox">
+
+      </div>
+   </div>
+
+   <div id = "popup" class = "popup">
+      <div class = "popup-content">
+         <img id = "popupImage" src="" alt="Popup Image">
+         <p id = "popupText"></p>
+         <button onclick="closePopUp()">Avisala Meiste</button>
+      </div>
+   </div>
+   </body>     
+   
+   <script src="SignUp.js"></script>
+   
+
+</html>
