@@ -23,7 +23,6 @@ function signUp() {
     showPopUp();
     account.popUp = true;
     localStorage.setItem("currentAccount", JSON.stringify(account));
-    window.location.href = "../index.html";
 }
 
 function logIn() {
@@ -68,7 +67,7 @@ function showPopUp() {
 
     const popUp = {
         "Hathoria": {
-            img: "assets/ThePirena.png",
+            img: "../assets/ThePirena.png",
             text: "Hathoria is the kingdom of fire, known for its fierce warriors and passionate people."
         },
         "Lireo": {
@@ -94,6 +93,7 @@ function showPopUp() {
 function closePopUp() {
     const modal = document.getElementById("popup");
     modal.style.display = "none";
+    window.location.href = "../index.html";
 }
 
 function addPoints() {
