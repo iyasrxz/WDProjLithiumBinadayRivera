@@ -68,7 +68,7 @@ function showPopUp() {
 
     const popUp = {
         "Hathoria": {
-            img: "assets/hathoria.png",
+            img: "assets/ThePirena.png",
             text: "Hathoria is the kingdom of fire, known for its fierce warriors and passionate people."
         },
         "Lireo": {
