@@ -1,16 +1,20 @@
 /* General style of the webpage */
 html,body{
-    height:100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height:100%;
     margin: 0px;
     padding: 0px;
-    background-image: url('../assets/yiz.png');
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('../assets/background3.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-blend-mode:difference;
+    background-attachment: fixed;
 }
 main{
-      padding: 50px 20px;
+    width:100%;
+    padding: 50px 20px;
 }
 /*Styles the navigation bar*/
 .navbar ul{
@@ -39,9 +43,6 @@ main{
 .navbar a:hover{
     background-color:hsla(28, 48%, 39%, 0.217);
 }
-.navbar li{
-    float: left;
-}
 .navbar li img{
     margin-top: 10px;
     margin-left: 10px;
@@ -63,7 +64,7 @@ main{
 .intro p{
       font-size: 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 0 auto;
       line-height: 1.6;
       text-align: justify;
 }
@@ -194,4 +195,30 @@ object-fit: contain;
 .footer li{
     text-decoration: none;
     color: hsl(28, 48%, 39%);
+}
+
+.quiz-btn {
+  display: block;        
+  width: fit-content;  
+  min-width: 320px;
+  max-width: 90%;
+  margin: 40px auto;          
+  box-sizing: border-box;           
+  padding: 18px 20px;
+  background: #fbf5ea;   
+  color: #b07a2a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 18px;
+  border: 3px solid #b8892f; 
+  text-align: center;      
+  transition: 0.25s ease;
+}
+
+.quiz-btn:hover {
+  background: #b07a2a;
+  color: #fff3d6;   
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }

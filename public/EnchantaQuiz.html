@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2Q Portfolio">
+    <meta name="keywords" content="2Q, Portfolio, Projects, Web Development">
+    <meta name="author" content="RIVERA, Brianna Aliah B. & BINADAY, Aliya Louise">
+    <title>Eteka Aneya Ivi</title>
+    <link rel="stylesheet" href="EnchantaQuiz.css">
+    <link rel="icon" href="../assets/encantadia_logo.png" type="image/png">
+</head>
+<body>
+
+<header>
+<!-- Navbar; Contains the navigation to other webpages -->
+<nav class="navbar">
+             <ul>
+                <li><img src="../assets/encantadia_logo.png" alt="Encantadia Logo" style="width:50px;height:50px;"></li>
+                <li><a href = "../index.html">Avoya</a></li>
+                <li><a href="Yanarteya.html">Yanarteya</a></li>
+                <li><a href="Serse Bua.html">Serse Bua</a></li>
+                <li><a href="Gajad.html">Gajad</a></li>
+                <li><a href="Enchanta.html">Enchanta</a></li>
+             </ul>
+            </nav> 
+</header>
+
+<div class="quiz-box">
+<!-- Start -->
+<div id="start-screen" class="card">
+  <h1>Enchanta Quiz</h1>
+  <p class="description">
+    Choose your difficulty and test your knowledge of the ancient language.
+  </p>
+
+  <button onclick="startQuiz('easy')">▶ Easy</button>
+  <button onclick="startQuiz('medium')">▶ Medium</button>
+  <button onclick="startQuiz('hard')">▶ Hard</button>
+</div>
+
+<!-- Quiz -->
+<div id="quiz-screen" class="card" style="display:none;">
+  <h2>Question</h2>
+  <p id="progress" class="small"></p>
+  <h3 id="question"></h3>
+  <div id="choices"></div>
+  <p id="feedback" class="feedback"></p>
+</div>
+
+<!-- Result -->
+<div id="result-screen" class="card" style="display:none;"></div>
+
+</div>
+
+<script>
+// Quiz Data
+let overallPoints = Number(localStorage.getItem("enchantaPoints")) || 0;
+let completedLevels = JSON.parse(localStorage.getItem("enchantaCompleted")) || {};
+let resultsCounted = false;
+let quizInProgress = false;
+const quizzes={
+easy:[
+{q:"Meaning of Paneya?",choices:["Expression of anger","Bread","Hope","Enemy"],answer:1},
+{q:"Word for Mother?",choices:["Ado","Adnes","Ada","Aldo"],answer:2},
+{q:"Meaning of Hadia?",choices:["Niece","Sibling","Aunt","Fairy"],answer:0},
+{q:"Word for Stubborn/Pasaway?",choices:["Heshne","Verdusa naasva","Geshnu","Ashtadi"],answer:3},
+{q:"What does 'Hasne ivo live' mean?",choices:["Excuse me","You are so beautiful","You will regret this","Happy Birthday"],answer:3},
+{q:"Meaning of Dama?",choices:["Foreigner","Fairy","Housekeeper","Grandmother"],answer:2},
+{q:"Word for Ghost/Spirit?",choices:["Ivtre","Madea","Ivneshe","Ivre"],answer:0},
+{q:"What is 'Thank You' in Enchanta?",choices:["Edi sanctre","Avisala Eshma","Avisala Meiste","Evre ishnu"],answer:1},
+{q:"Meaning of Devas?",choices:["Angel","Queen","Heaven","Soul"],answer:2},
+{q:"What is 'I love you' in Enchanta?",choices:["E correi diu","Ivi musti paneya","Isne binn voyanazar","Asnamon arber"],answer:0}
+],
+medium:[
+{q:"Word for Stop",choices:["Gusna","Ecsha","Ssheda","Ecapala"],answer:2},
+{q:"Meaning of Mine-a?",choices:["Light","Emotion","Snow","Storm"],answer:2},
+{q:"What is 'Ybarro' in Enchanta?",choices:["Half Blood","Brave","Prince","Saviour"],answer:1},
+{q:"Word for Witch?",choices:["Sarum","Moltre","Morfe","Warka"],answer:3},
+{q:"What does 'Tanakreshna' mean?",choices:["Enemy","To fight","Unluckiness","Leave"],answer:2},
+{q:"Meaning of Voya?",choices:["Way","Future","Again","All"],answer:0},
+{q:"Meaning of Mashna?",choices:["Enemy","Sibling","Native","General(Military)"],answer:3},
+{q:"Word for Go Away?",choices:["Gusna","Enchala","Geshnu","Ivictus"],answer:2},
+{q:"What is 'Come here?' in Enchanta?",choices:["Adarde","Agape Avi","Ebi meshne","Edi Sanctre"],answer:0},
+{q:"What does 'Ivi musti paneya' mean?",choices:["I'm sorry","I'm hungry","I know","I don't know"],answer:1}
+],
+hard:[
+{q:"Word for Melody?",choices:["Moyve","Neshda","Mnemosa","Kanwu"],answer:2},
+{q:"Meaning of Vashna?",choices:["Desire","Kindness","Honor","Time"],answer:1},
+{q:"What does 'Este Ivi' mean?",choices:["What is the meaning of this?","Get Ready","Hurry up","Is this true?"],answer:3},
+{q:"Meaning of Enchala?",choices:["Past","Incantation","Maybe","Who?"],answer:1},
+{q:"Word for Savior?",choices:["Jantu","Luntae","Kosma","Luntaie"],answer:3},
+{q:"What is 'Water' in Enchanta?",choices:["Iseru","Indellum","Ivro","I-lamer"],answer:3},
+{q:"What does 'Edepunte runte' mean?",choices:["Find them","Leave me alone","They are approaching","It won't happen"],answer:0},
+{q:"Meaning of Detrumvia?",choices:["New","Forget","Liar","Return"],answer:2},
+{q:"What does 'Ne Sshuda' mean?",choices:["Excuse me","A password to Batis ng katotohanan","Get ready","You're wrong"],answer:3},
+{q:"What is 'You are so beautiful' in Enchanta?",choices:["Asnamon arber","Nedanus muste","Hasne duvin","Edi sanctre"],answer:1}
+]
+};
+
+// Points per level
+const levelPoints={ easy:1, medium:2, hard:3 };
+
+let quiz=[], index=0, score=0, userAnswers=[], currentLevel="", locked=false;
+
+const startScreen=document.getElementById("start-screen");
+const quizScreen=document.getElementById("quiz-screen");
+const resultScreen=document.getElementById("result-screen");
+const questionEl=document.getElementById("question");
+const choicesEl=document.getElementById("choices");
+const feedbackEl=document.getElementById("feedback");
+const progressEl=document.getElementById("progress");
+
+function startQuiz(level){
+  quizInProgress = true;
+  currentLevel=level;
+  quiz=quizzes[level];
+  index=0;
+  score=0;
+  userAnswers=[];
+
+  startScreen.style.display="none";
+  resultScreen.style.display="none";
+  quizScreen.style.display="block";
+  loadQuestion();
+}
+
+function loadQuestion(){
+  locked=false;
+  feedbackEl.textContent="";
+  questionEl.textContent=quiz[index].q;
+  progressEl.textContent=`${index+1} / ${quiz.length}`;
+  choicesEl.innerHTML="";
+
+  quiz[index].choices.forEach((c,i)=>{
+    const div=document.createElement("div");
+    div.className="choice";
+    div.textContent=c;
+    div.onclick=()=>selectAnswer(i);
+    choicesEl.appendChild(div);
+  });
+}
+
+function selectAnswer(i){
+  if(locked) return;
+  locked=true;
+  userAnswers.push(i);
+
+  if(i===quiz[index].answer){
+    score += levelPoints[currentLevel];
+    feedbackEl.textContent="Correct!";
+  }else{
+    feedbackEl.textContent="Wrong!";
+  }
+
+  setTimeout(()=>{
+    index++;
+    (index<quiz.length)?loadQuestion():showResults();
+  },800);
+}
+
+function showResults(){
+  quizInProgress = false;
+  quizScreen.style.display="none";
+  resultScreen.style.display="block";
+
+  if (!completedLevels[currentLevel]) {
+    overallPoints += score;
+    completedLevels[currentLevel] = true;
+
+    localStorage.setItem("enchantaPoints", overallPoints);
+    localStorage.setItem("enchantaCompleted", JSON.stringify(completedLevels));
+  }
+
+  const maxScore=quiz.length*levelPoints[currentLevel];
+  const percent=(score/maxScore)*100;
+
+
+  let html=`
+    <h2>Quiz Summary</h2>
+    <p class="score">Level Score: ${score}/${maxScore}</p>
+    <p class="score">Overall Points: ${overallPoints} points</p>
+
+
+    <div class="score-bar">
+      <div class="score-fill" id="scoreFill"></div>
+    </div>
+  `;
+
+  quiz.forEach((q,i)=>{
+    const correct=q.answer===userAnswers[i];
+    html+=`
+    <div class="review">
+      <b>Q${i+1}:</b> ${q.q}<br>
+      <span class="${correct?"correct":"wrong"}">
+        Your: ${q.choices[userAnswers[i]]}
+      </span><br>
+      <span class="correct">
+        Correct: ${q.choices[q.answer]}
+      </span>
+    </div>`;
+  });
+
+  html+=`<button onclick="location.reload()">Back to Main Quiz Page</button>`;
+  resultScreen.innerHTML=html;
+
+window.onbeforeunload = function () {
+  if (quizInProgress) {
+    return "Are you sure you want to leave?";
+  }
+};
+
+  setTimeout(()=>{
+    document.getElementById("scoreFill").style.width=percent+"%";
+  },100);
+}
+
+// Navigation Bar
+document.querySelectorAll(".navbar a").forEach(link => {
+  link.addEventListener("click", function (e) {
+
+    if (!quizInProgress) return;
+
+    const confirmLeave = confirm(
+      "Are you sure you want to quit the quiz? Your progress will be lost."
+    );
+
+    if (!confirmLeave) {
+      e.preventDefault(); 
+    }
+  });
+});
+
+</script>
+</body>
+</html>
