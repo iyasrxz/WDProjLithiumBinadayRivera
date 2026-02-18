@@ -71,7 +71,7 @@ function showPopUp() {
             text: "Hathoria is the kingdom of fire, known for its fierce warriors and passionate people."
         },
         "Lireo": {
-            img: "assets/lireo.png",
+            img: "../assets/TheAmihan.png",
             text: "Lireo is the kingdom of water, famous for its serene landscapes and skilled sailors."
         },
         "Sapiro": {
