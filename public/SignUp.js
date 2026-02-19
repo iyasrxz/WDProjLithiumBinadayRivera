@@ -68,11 +68,11 @@ function showPopUp() {
     const popUp = {
         "Hathoria": {
             img: "../assets/ThePirena.png",
-            text: "Hathoria is the kingdom of fire, known for its fierce warriors and passionate people."
+            text: "Hathoria is the kingdom of fire, known for its determined warriors and passionate people."
         },
         "Lireo": {
             img: "../assets/TheAmihan.png",
-            text: "Lireo is the kingdom of water, famous for its serene landscapes and skilled sailors."
+            text: "Lireo is the kingdom of air where royalties reside."
         },
         "Sapiro": {
             img: "assets/sapiro.png",
@@ -80,7 +80,7 @@ function showPopUp() {
         },
         "Adamya": {
             img: "assets/adamya.png",
-            text: "Adamya is the kingdom of air, celebrated for its free-spirited and innovative citizens."
+            text: "Adamya is the kingdom of water, home to unique inhabitants fitting for the environment."
         }
     };
 

@@ -1,22 +1,24 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: white;
+html, body{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../assets/Avoya.png');
+    background-size:cover;
+    background-blend-mode:difference;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
-
 .container{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(237, 230, 230, 0.7);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 900px;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(206, 198, 198, 0.2);
+    width: 700px;
+    height : 500px;
     backdrop-filter: blur(10px);
+    margin: 700px auto 0 auto;
 }
 
 input, select{
@@ -30,7 +32,7 @@ input, select{
 button{
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #dac7a4;
     color: white;
     border: none;
     border-radius: 5px;
