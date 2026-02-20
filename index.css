@@ -4,11 +4,6 @@ html, body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url('./assets/Avoya.png');
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-blend-mode:difference;
-    background-position:inherit;
 }
 /* Specifies the look of the navigation bar */
 .navbar ul{
