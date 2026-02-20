@@ -20,6 +20,9 @@
                 <li><a href="Serse Bua.html">Serse Bua</a></li>
                 <li><a href="Gajad.html">Gajad</a></li>
                 <li><a href="Enchanta.html">Enchanta</a></li>
+                <li class="nav-right">
+                <a href="ShopThemes.html" class="themes-btn">🛒 Themes</a>
+                </li>
              </ul>
         </nav> 
     <!-- Class "intro" creates a section that's separated from the rest -->
@@ -105,5 +108,12 @@ Suzette Doctolero, the headwriter of the hit series, shared in an interview with
          <p>Copyright © Binaday & Rivera 2025</p>
          <li><a href="Sanggunian.html">Sanggunian</a></li>
         </div>
+    <script>
+    const activeTheme = localStorage.getItem("activeTheme");
+
+    if(activeTheme){
+    document.body.classList.add(activeTheme);
+    }
+    </script>
     </body>
     </html> 
