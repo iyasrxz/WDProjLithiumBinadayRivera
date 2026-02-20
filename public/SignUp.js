@@ -75,11 +75,11 @@ function showPopUp() {
             text: "Lireo is the kingdom of air where royalties reside."
         },
         "Sapiro": {
-            img: "assets/sapiro.png",
+            img: "../assets/TheDanaya.png",
             text: "Sapiro is the kingdom of earth, renowned for its strong and resilient inhabitants."
         },
         "Adamya": {
-            img: "assets/adamya.png",
+            img: "../assets/TheAlena.png",
             text: "Adamya is the kingdom of water, home to unique inhabitants fitting for the environment."
         }
     };
