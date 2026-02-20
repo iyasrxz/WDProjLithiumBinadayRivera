@@ -40,3 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 });
+
+const activeTheme = localStorage.getItem("activeTheme");
+
+if(activeTheme){
+  document.body.classList.add(activeTheme);
+}

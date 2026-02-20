@@ -47,6 +47,22 @@ html, body{
     margin-top: 10px;
     margin-left: 10px;
 }
+.themes-btn{
+  background: #e7d2a6;
+  color: hsl(28, 48%, 38%);
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 8px 18px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+.themes-btn:hover{
+  background-color: hsla(28, 48%, 39%, 0.217);
+}
 /*Specificies the look for all h3 element*/
 h3{
     text-align: center;
@@ -137,4 +153,32 @@ section h1, section p {
 .footer li{
     text-decoration: none;
     color: hsl(28, 48%, 39%);
+}
+/* Etheria */
+body.etheria{
+  background: linear-gradient(#e6d7ff, #bfa8ff);
+  font-family: "Georgia", serif;
+}
+
+/* Avaria */
+body.avria{
+  background: linear-gradient(#ffe6c7, #e0a96d);
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Devas */
+body.devas{
+  height: 100%;
+  font-family: "Palatino Linotype", serif;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../assets/Devas.png');
+  background-size: cover;
+}
+
+/* Balaak */
+body.balaak{
+  background: linear-gradient(#2b2b2b, #000);
+  color: #f5e6c8;
+  font-family: "Courier New", monospace;
 }

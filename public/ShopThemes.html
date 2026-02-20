@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2Q Portfolio">
+    <meta name="keywords" content="2Q, Portfolio, Projects, Web Development">
+    <meta name="author" content="RIVERA, Brianna Aliah B. & BINADAY, Aliya Louise">
+    <title>Eteka Aneya Ivi</title>
+    <link rel="icon" href="../assets/encantadia_logo.png" type="image/png">
+</head>
+<style>
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px;
+    padding: 10px 14px;
+}
+.navbar a{
+    background: #e7d2a6;
+    color:hsl(28, 48%, 38%);
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 8px 18px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.navbar a:hover{
+    background-color:hsla(28, 48%, 39%, 0.217);
+}
+.navbar li{
+    float: left;
+}
+.navbar li img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+body{
+  height: 100%;
+  font-family: Georgia, serif;
+  background:#cbb38a;
+  margin: 0px;
+  padding: 0px;
+}
+.shop-box{
+  max-width:700px;
+  margin:auto;
+  background:#efe3c7;
+  padding:25px;
+  border-radius:18px;
+}
+.theme-item{
+  background:#f7edd6;
+  padding:15px;
+  border-radius:12px;
+  margin:12px 0;
+}
+button{
+  background:#b07a2a;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:10px;
+  cursor:pointer;
+}
+/* Etheria */
+body.etheria{
+  background: linear-gradient(#e6d7ff, #bfa8ff);
+  font-family: "Georgia", serif;
+}
+
+/* Avaria */
+body.avria{
+  background: linear-gradient(#ffe6c7, #e0a96d);
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Devas */
+body.devas{
+  height: 100%;
+  font-family: "Palatino Linotype", serif;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../assets/Devas.png');
+  background-size: cover;
+}
+
+/* Balaak */
+body.balaak{
+  background: linear-gradient(#2b2b2b, #000);
+  color: #f5e6c8;
+  font-family: "Courier New", monospace;
+}
+</style>
+<body>
+<header>
+<nav class="navbar">
+             <ul>
+                <li><img src="../assets/encantadia_logo.png" alt="Encantadia Logo" style="width:50px;height:50px;"></li>
+                <li><a href = "../index.html">Avoya</a></li>
+                <li><a href="Yanarteya.html">Yanarteya</a></li>
+                <li><a href="Serse Bua.html">Serse Bua</a></li>
+                <li><a href="Gajad.html">Gajad</a></li>
+                <li><a href="Enchanta.html">Enchanta</a></li>
+             </ul>
+            </nav> 
+</header>
+<div class="shop-box">
+  <h1>Theme Shop</h1>
+  <p id="pointsDisplay"></p>
+
+  <div class="shop-item">
+    <h3>Default Theme</h3>
+    <p>Cost: Free</p>
+    <button onclick="equipTheme('')">Equip</button>
+  </div>
+
+  <div class="theme-item">
+    <h3>Etheria Theme</h3>
+    <p>Cost: 10 pts</p>
+    <button onclick="buyTheme('etheria',10)">Buy</button>
+    <button onclick="equipTheme('etheria')">Equip</button>
+  </div>
+
+  <div class="theme-item">
+    <h3>Avaria Origin Theme</h3>
+    <p>Cost: 15 pts</p>
+    <button onclick="buyTheme('avria',15)">Buy</button>
+    <button onclick="equipTheme('avria')">Equip</button>
+  </div>
+
+  <div class="theme-item">
+    <h3>Devas Theme</h3>
+    <p>Cost: 20 pts</p>
+    <button onclick="buyTheme('devas',20)">Buy</button>
+    <button onclick="equipTheme('devas')">Equip</button>
+  </div>
+
+  <div class="theme-item">
+    <h3>Balaak Theme</h3>
+    <p>Cost: 20 pts</p>
+    <button onclick="buyTheme('balaak',20)">Buy</button>
+    <button onclick="equipTheme('balaak')">Equip</button>
+  </div>
+</div>
+
+<script>
+let points = Number(localStorage.getItem("enchantaPoints")) || 0;
+let ownedThemes = JSON.parse(localStorage.getItem("enchantaThemes")) || [];
+
+document.getElementById("pointsDisplay").textContent =
+  "Your Points: " + points;
+
+function buyTheme(themeName, cost){
+
+  if(ownedThemes.includes(themeName)){
+    alert("You already own this theme.");
+    return;
+  }
+
+  if(points < cost){
+    alert("Not enough points!");
+    return;
+  }
+
+  points -= cost;
+  ownedThemes.push(themeName);
+
+  localStorage.setItem("enchantaPoints", points);
+  localStorage.setItem("enchantaThemes", JSON.stringify(ownedThemes));
+
+  alert("Theme unlocked!");
+  location.reload();
+}
+function equipTheme(themeName){
+  if(themeName !== "" && !ownedThemes.includes(themeName)){
+    alert("Buy this theme first!");
+    return;
+  }
+
+  localStorage.setItem("activeTheme", themeName);
+  document.body.className = themeName; 
+  updateButtons();
+  alert("Theme applied!");
+}
+
+function updateButtons(){
+  const activeTheme = localStorage.getItem("activeTheme") || "";
+
+  document.querySelectorAll(".shop-item button, .theme-item button").forEach(btn => {
+    if(btn.textContent === "Equip" || btn.textContent === "Equipped"){
+      const match = btn.getAttribute("onclick").match(/equipTheme\('([^']*)'\)/);
+      if(match){
+        const btnTheme = match[1];
+        if(btnTheme === activeTheme){
+          btn.textContent = "Equipped";
+          btn.disabled = true;
+          btn.style.backgroundColor = "#555";
+        } else {
+          btn.textContent = "Equip";
+          btn.disabled = false;
+          btn.style.backgroundColor = "#b07a2a";
+        }
+      }
+    }
+  });
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("activeTheme") || "";
+  document.body.className = savedTheme;
+  updateButtons();
+});
+</script>
+</body>
+</html>
