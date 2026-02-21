@@ -42,8 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const activeTheme = localStorage.getItem("activeTheme");
-
-if(activeTheme){
-  document.body.classList.add(activeTheme);
-}
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("selectedTheme") || "default";
+  applyTheme(savedTheme);
+});

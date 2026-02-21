@@ -60,7 +60,7 @@
 }
 body{
   height: 100%;
-  font-family: Georgia, serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background:#cbb38a;
   margin: 0px;
   padding: 0px;
@@ -261,8 +261,8 @@ function updateButtons(){
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  document.body.className = currentAccount.activeTheme || "";
-  updateButtons();
+  const savedTheme = localStorage.getItem("selectedTheme") || "default";
+  applyTheme(savedTheme);
 });
 </script>
 </body>

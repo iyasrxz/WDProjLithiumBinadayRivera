@@ -59,5 +59,11 @@
       <span></span><span></span><span></span>
     </div>
 </footer>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("selectedTheme") || "default";
+  applyTheme(savedTheme);
+});
+</script>
 </body>
 </html>
