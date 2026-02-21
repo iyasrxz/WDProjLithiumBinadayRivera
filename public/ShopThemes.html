@@ -219,9 +219,9 @@ function buyTheme(themeName, cost){
   location.reload();
 }
 
-function equipTheme(themeName){
+function equipTheme(themeName) {
 
-  if(themeName !== "" && !ownedThemes.includes(themeName)){
+  if (themeName !== "" && !ownedThemes.includes(themeName)) {
     alert("Buy this theme first!");
     return;
   }
@@ -232,9 +232,10 @@ function equipTheme(themeName){
   localStorage.setItem("currentAccount", JSON.stringify(currentAccount));
   localStorage.setItem("account_" + currentAccount.username, JSON.stringify(currentAccount));
 
-  document.body.className = themeName;
-  updateButtons();
+  // apply immediately
+  document.body.className = themeName || "default";
 
+  updateButtons();
   alert("Theme applied!");
 }
 
@@ -261,8 +262,13 @@ function updateButtons(){
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("selectedTheme") || "default";
-  applyTheme(savedTheme);
+  const saved = localStorage.getItem("currentAccount");
+  if (!saved) return;
+
+  const account = JSON.parse(saved);
+
+  // apply saved theme on page load
+  document.body.className = account.activeTheme || "default";
 });
 </script>
 </body>
