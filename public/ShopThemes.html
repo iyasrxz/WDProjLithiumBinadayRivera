@@ -8,6 +8,9 @@
     <meta name="author" content="RIVERA, Brianna Aliah B. & BINADAY, Aliya Louise">
     <title>Eteka Aneya Ivi</title>
     <link rel="icon" href="../assets/encantadia_logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Instrument Serif' rel='stylesheet'>
 </head>
 <style>
 .navbar ul{
@@ -88,14 +91,22 @@ button{
 }
 /* Etheria */
 body.etheria{
-  background: linear-gradient(#e6d7ff, #bfa8ff);
-  font-family: "Georgia", serif;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../assets/Etheria.png');
+  background-size: cover;
+  font-family: "Cinzel", sans-serif;
 }
 
-/* Avaria */
-body.avria{
-  background: linear-gradient(#ffe6c7, #e0a96d);
-  font-family: "Trebuchet MS", sans-serif;
+/* Realm of Celestial Beings */
+body.realm-of-celestial-beings{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../assets/RealmOfCelestialBeings.png');
+  background-size: cover;
+  font-family: "Bitter";
 }
 
 /* Devas */
@@ -107,12 +118,45 @@ body.devas{
   background-image: url('../assets/Devas.png');
   background-size: cover;
 }
-
+body.devas h1,
+body.devas h2,
+body.devas h3{
+  color: #8498d4f4;
+}
+body.devas .navbar ul{
+  background-color: #d5b65b56;
+}
+body.devas .navbar a{
+  background: #ffffffbc;
+  color: #8498d4f4;
+}
+body.devas .navbar a:hover{
+  background-color: #d7dffab6;
+}
 /* Balaak */
 body.balaak{
-  background: linear-gradient(#2b2b2b, #000);
-  color: #f5e6c8;
-  font-family: "Courier New", monospace;
+  height: 100%;
+  font-family: "Instrument Serif", serif;
+  color: #070101;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../assets/Balaak.png');
+  background-size: cover;
+}
+body.balaak h1,
+body.balaak h2,
+body.balaak h3{
+  color: #4b0a0af4;
+}
+body.balaak .navbar ul{
+  background-color: rgba(49, 7, 7, 0.7);
+}
+body.balaak .navbar a{
+  background: #070101bc;
+  color: #720e0ef4;
+}
+body.balaak .navbar a:hover{
+  background-color: #270707b6;
 }
 </style>
 <body>
@@ -149,10 +193,10 @@ body.balaak{
   </div>
 
   <div class="theme-item">
-    <h3>Avaria Origin Theme</h3>
+    <h3>Realm of Celestial Beings Theme</h3>
     <p>Cost: 15 pts</p>
-    <button onclick="buyTheme('avria',15)">Buy</button>
-    <button onclick="equipTheme('avria')">Equip</button>
+    <button onclick="buyTheme('realm-of-celestial-beings',15)">Buy</button>
+    <button onclick="equipTheme('realm-of-celestial-beings')">Equip</button>
   </div>
 
   <div class="theme-item">

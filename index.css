@@ -314,3 +314,66 @@ html, body{
     text-decoration: none;
     color: hsl(28, 48%, 39%);
 }
+/* Etheria */
+body.etheria{
+  font-family: "Cinzel", sans-serif;
+}
+
+/* Realm of Celestial Beings */
+body.realm-of-celestial-beings{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../assets/RealmOfCelestialBeings.png');
+  background-size: cover;
+  font-family: "Bitter";
+}
+
+/* Devas */
+body.devas{
+  height: 100%;
+  font-family: "Palatino Linotype", serif;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('./assets/Devas.png');
+  background-size: cover;
+}
+body.devas h1,
+body.devas h2,
+body.devas h3{
+  color: #8498d4f4;
+}
+body.devas .navbar ul{
+  background-color: #d5b65b56;
+}
+body.devas .navbar a{
+  background: #ffffffbc;
+  color: #8498d4f4;
+}
+body.devas .navbar a:hover{
+  background-color: #d7dffab6;
+}
+/* Balaak */
+body.balaak{
+  height: 100%;
+  font-family: "Instrument Serif", serif;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('./assets/Balaak.png');
+  background-size: cover;
+}
+body.balaak h1,
+body.balaak h2,
+body.balaak h3{
+  color: #4b0a0af4;
+}
+body.balaak .navbar ul{
+  background-color: rgba(49, 7, 7, 0.7);
+}
+body.balaak .navbar a{
+  background: #070101bc;
+  color: #720e0ef4;
+}
+body.balaak .navbar a:hover{
+  background-color: #270707b6;
+}
