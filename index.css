@@ -117,6 +117,36 @@ html, body{
         transform: translateY(0);
     }
 }
+.brilyante{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('./assets/lireyow.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.brilyante-container{
+    perspective: 1000px;
+    display: flex;   
+}
+.animate1{
+    width: 150px;
+    animation: spinY 6s linear infinite;
+    transform-style: preserve-3d;
+}
+@keyframes spinY {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+
 /* Specifies the look of the footer */
 .footer{
     text-align: left;
