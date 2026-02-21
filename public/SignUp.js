@@ -170,3 +170,4 @@ function customize() {
     document.getElementById("points").textContent = `Points: ${account.points}`;
     document.getElementById("color").textContent = `Color: ${account.color}`;
 }
+

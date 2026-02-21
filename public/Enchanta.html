@@ -158,10 +158,21 @@
          <li><a href="Sanggunian.html">Sanggunian</a></li>
 </div>
 <script>
+<<<<<<< HEAD
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("selectedTheme") || "default";
   applyTheme(savedTheme);
 });
+=======
+const activeTheme = localStorage.getItem("activeTheme");
+
+if(activeTheme){
+  document.body.classList.add(activeTheme);
+}
+
+
+
+>>>>>>> 3266b824ebca1b0d34377e648803496ab741bf82
 </script>
 </body>
 </html>
