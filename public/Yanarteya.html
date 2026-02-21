@@ -110,11 +110,10 @@ Suzette Doctolero, the headwriter of the hit series, shared in an interview with
          <li><a href="Sanggunian.html">Sanggunian</a></li>
         </div>
     <script>
-    const activeTheme = localStorage.getItem("activeTheme");
-
-    if(activeTheme){
-    document.body.classList.add(activeTheme);
-    }
+    window.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("selectedTheme") || "default";
+        applyTheme(savedTheme);
+    });
     </script>
     </body>
     </html> 
