@@ -16,7 +16,7 @@ html, body{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(206, 198, 198, 0.2);
     width: 700px;
-    height : 500px;
+    height : auto;
     backdrop-filter: blur(10px);
     margin: 700px auto 0 auto;
 }
