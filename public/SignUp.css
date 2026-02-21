@@ -3,7 +3,7 @@ html, body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url('../assets/Avoya.png');
+    background-image: url('../assets/update.webp');
     background-size:cover;
     background-blend-mode:difference;
     display: flex;
@@ -18,7 +18,6 @@ html, body{
     width: 700px;
     height : auto;
     backdrop-filter: blur(10px);
-    margin: 700px auto 0 auto;
 }
 
 input, select{
@@ -40,7 +39,7 @@ button{
 }
 
 button:hover{
-    background-color: #45a049;
+    background-color: #1e1e1e;
 }
 
 #dashboard{
