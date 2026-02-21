@@ -12,4 +12,3 @@ images.forEach(image => {
     obeserve.observe(image);
 }
 );
-
