@@ -1,3 +1,4 @@
+// sign up
 function signUp() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("pass").value;
@@ -8,28 +9,49 @@ function signUp() {
         return;
     }
 
+    // check if username already exists
+    if (localStorage.getItem("account_" + username)) {
+        alert("Username already exists.");
+        return;
+    }
+
     const account = {
         username,
         password,
         choice,
-        points:0,
-        color: choice === "Hathoria" ? "red" : choice === "Lireo" ? "blue" : choice === "Sapiro" ? "brown" : "green",
-        popUp: false
+        points: 0, 
+        color: choice === "Hathoria" ? "red"
+             : choice === "Lireo" ? "blue"
+             : choice === "Sapiro" ? "brown"
+             : "green",
+        popUp: false,
+        ownedThemes: [],
+        activeTheme: "",
+        completedLevels: {}
     };
 
-    localStorage.setItem("account", JSON.stringify(account));
+    // save per account
+    localStorage.setItem("account_" + username, JSON.stringify(account));
     localStorage.setItem("currentAccount", JSON.stringify(account));
+
     alert("Account created successfully!");
+
     showPopUp();
+
     account.popUp = true;
     localStorage.setItem("currentAccount", JSON.stringify(account));
+    localStorage.setItem("account_" + username, JSON.stringify(account));
 }
 
+
+// log in
 function logIn() {
     const username = document.getElementById("usernameLogin").value;
     const password = document.getElementById("passLogin").value;
 
-    const saved = localStorage.getItem("account");
+    // ✅ load correct account
+    const saved = localStorage.getItem("account_" + username);
+
     if (!saved) {
         alert("No account found. Please sign up first.");
         return;
@@ -37,16 +59,24 @@ function logIn() {
 
     const account = JSON.parse(saved);
 
-    if (account.username === username && account.password === password) {
+    if (account.password === password) {
         alert("Login successful!");
+
         localStorage.setItem("currentAccount", JSON.stringify(account));
         window.location.href = "../index.html";
     } else {
         alert("Invalid username or password.");
     }
-}   
+}
 
-function showDashboard(account) {
+
+// dashboard
+function showDashboard() {
+    const saved = localStorage.getItem("currentAccount");
+    if (!saved) return;
+
+    const account = JSON.parse(saved);
+
     dashboard.style.display = "block";
     document.getElementById("welcome").textContent = `Welcome, ${account.username}!`;
     document.getElementById("points").textContent = `Points: ${account.points}`;
@@ -55,13 +85,18 @@ function showDashboard(account) {
     if (!account.popUp) {
         showPopUp();
         account.popUp = true;
+
         localStorage.setItem("currentAccount", JSON.stringify(account));
-    }   
+        localStorage.setItem("account_" + account.username, JSON.stringify(account));
+    }
 }
+
+// popup
 function showPopUp() {
     const modal = document.getElementById("popup");
     const img = document.getElementById("popupImage");
     const text = document.getElementById("popupText");
+
     const saved = localStorage.getItem("currentAccount");
     const account = JSON.parse(saved);
 
@@ -88,34 +123,50 @@ function showPopUp() {
     img.src = selected.img;
     text.textContent = selected.text;
     modal.style.display = "flex";
-};
+}
 
+// close popup
 function closePopUp() {
-    const modal = document.getElementById("popup");
-    modal.style.display = "none";
+    document.getElementById("popup").style.display = "none";
     window.location.href = "../index.html";
 }
 
-function addPoints() {
-    const username = document.getElementById("currentId").value;
-    const saved = localStorage.getItem("username");
+// add points
+function addPoints(amount = 10) {
+    const saved = localStorage.getItem("currentAccount");
+    if (!saved) return;
 
-    account.points += 10;
+    const account = JSON.parse(saved);
+
+    account.points += amount;
+
+    // save both places
     localStorage.setItem("currentAccount", JSON.stringify(account));
+    localStorage.setItem("account_" + account.username, JSON.stringify(account));
+
     document.getElementById("points").textContent = `Points: ${account.points}`;
 }
 
-function customize(color) {
+// customize
+function customize() {
+    const saved = localStorage.getItem("currentAccount");
+    if (!saved) return;
+
+    const account = JSON.parse(saved);
     const colorInput = document.getElementById("colorInput").value;
-    account.color = colorInput;
-    localStorage.setItem("currentAccount", JSON.stringify(account));
-    document.getElementById("color").textContent = `Color: ${account.color}`;
 
     if (account.points < 20) {
         alert("You don't have enough points to customize your website.");
         return;
     }
-    
+
     account.points -= 20;
     account.color = colorInput;
+
+    // save both places
+    localStorage.setItem("currentAccount", JSON.stringify(account));
+    localStorage.setItem("account_" + account.username, JSON.stringify(account));
+
+    document.getElementById("points").textContent = `Points: ${account.points}`;
+    document.getElementById("color").textContent = `Color: ${account.color}`;
 }
