@@ -171,3 +171,8 @@ function customize() {
     document.getElementById("color").textContent = `Color: ${account.color}`;
 }
 
+function logOut() {
+    localStorage.removeItem("currentAccount");
+    alert("Logged out successfully!");
+    window.location.href = "../index.html";
+}
