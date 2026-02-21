@@ -42,6 +42,22 @@
     margin-top: 10px;
     margin-left: 10px;
 }
+.themes-btn{
+  background: #e7d2a6;
+  color: hsl(28, 48%, 38%);
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 8px 18px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+.themes-btn:hover{
+  background-color: hsla(28, 48%, 39%, 0.217);
+}
 body{
   height: 100%;
   font-family: Georgia, serif;
@@ -109,6 +125,9 @@ body.balaak{
                 <li><a href="Serse Bua.html">Serse Bua</a></li>
                 <li><a href="Gajad.html">Gajad</a></li>
                 <li><a href="Enchanta.html">Enchanta</a></li>
+                <li class="nav-right">
+                <a href="ShopThemes.html" class="themes-btn">🛒 Themes</a>
+                </li>
              </ul>
             </nav> 
 </header>
@@ -152,8 +171,22 @@ body.balaak{
 </div>
 
 <script>
-let points = Number(localStorage.getItem("enchantaPoints")) || 0;
-let ownedThemes = JSON.parse(localStorage.getItem("enchantaThemes")) || [];
+// load current account
+let currentAccount = JSON.parse(localStorage.getItem("currentAccount"));
+
+if (!currentAccount) {
+  alert("No account logged in.");
+  window.location.href = "../login.html"; // adjust if needed
+}
+
+// get data from account
+let points = currentAccount.points || 0;
+let ownedThemes = currentAccount.ownedThemes || [];
+let activeTheme = currentAccount.activeTheme || "";
+
+// show points
+document.getElementById("pointsDisplay").textContent =
+  "Your Points: " + points;
 
 document.getElementById("pointsDisplay").textContent =
   "Your Points: " + points;
@@ -170,29 +203,43 @@ function buyTheme(themeName, cost){
     return;
   }
 
+  // deduct
   points -= cost;
   ownedThemes.push(themeName);
 
-  localStorage.setItem("enchantaPoints", points);
-  localStorage.setItem("enchantaThemes", JSON.stringify(ownedThemes));
+  // save into account
+  currentAccount.points = points;
+  currentAccount.ownedThemes = ownedThemes;
+
+  // save both storages
+  localStorage.setItem("currentAccount", JSON.stringify(currentAccount));
+  localStorage.setItem("account_" + currentAccount.username, JSON.stringify(currentAccount));
 
   alert("Theme unlocked!");
   location.reload();
 }
+
 function equipTheme(themeName){
+
   if(themeName !== "" && !ownedThemes.includes(themeName)){
     alert("Buy this theme first!");
     return;
   }
 
-  localStorage.setItem("activeTheme", themeName);
-  document.body.className = themeName; 
+  // save to account
+  currentAccount.activeTheme = themeName;
+
+  localStorage.setItem("currentAccount", JSON.stringify(currentAccount));
+  localStorage.setItem("account_" + currentAccount.username, JSON.stringify(currentAccount));
+
+  document.body.className = themeName;
   updateButtons();
+
   alert("Theme applied!");
 }
 
 function updateButtons(){
-  const activeTheme = localStorage.getItem("activeTheme") || "";
+  const activeTheme = currentAccount.activeTheme || "";
 
   document.querySelectorAll(".shop-item button, .theme-item button").forEach(btn => {
     if(btn.textContent === "Equip" || btn.textContent === "Equipped"){
@@ -214,8 +261,7 @@ function updateButtons(){
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("activeTheme") || "";
-  document.body.className = savedTheme;
+  document.body.className = currentAccount.activeTheme || "";
   updateButtons();
 });
 </script>
