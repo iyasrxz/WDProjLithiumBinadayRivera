@@ -209,14 +209,42 @@ html, body{
     color: hsl(28, 48%, 39%);
 }
 /* Etheria */
+/* Etheria */
 body.etheria{
   height: 100%;
   margin: 0px;
   padding: 0px;
   background-image: url('../assets/Etheria.png');
   background-size: cover;
-  background-repeat: repeat;
   font-family: "Cinzel", sans-serif;
+  color:#000000;
+}
+body.etheria h1,
+body.etheria h2,
+body.etheria h3{
+  color: #330a5af4;
+}
+body.etheria .navbar ul{
+  background-color: #231729ca;
+}
+body.etheria .navbar a{
+  background: #1b0e2bbc;
+  color: #49179af4;
+}
+body.etheria .navbar a:hover{
+  background-color: #e4d7fab6;
+}
+body.etheria .filter-btn {
+  border: 1px solid #000;
+  background: transparent;
+  color: #4a0e72f4;
+  cursor: pointer;
+}
+body.etheria .filter-btn:hover {
+  background: #180727b6;
+}
+body.etheria .filter-btn.active {
+  background: #000;
 }
 
 /* Realm of Celestial Beings */
@@ -254,6 +282,18 @@ body.devas .navbar a{
 }
 body.devas .navbar a:hover{
   background-color: #d7dffab6;
+}
+body.devas .filter-btn {
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #8498d4f4;
+  cursor: pointer;
+}
+body.devas .filter-btn:hover {
+  background: #4a5d9cb6;
+}
+body.devas .filter-btn.active {
+  background: #ffffff;
 }
 /* Balaak */
 body.balaak{
