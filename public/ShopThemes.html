@@ -91,6 +91,21 @@ button{
   border-radius:10px;
   cursor:pointer;
 }
+/*Styles the footer*/
+.footer{
+    text-align: left;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: hsl(28, 48%, 39%);
+}
+.footer li{
+    text-decoration: none;
+    color: hsl(28, 48%, 39%);
+}
 /* Etheria */
 body.etheria{
   height: 100%;
@@ -99,6 +114,36 @@ body.etheria{
   background-image: url('../assets/Etheria.png');
   background-size: cover;
   font-family: "Cinzel", sans-serif;
+  color:#000000;
+}
+body.etheria h1,
+body.etheria h2,
+body.etheria h3{
+  color: #330a5af4;
+}
+body.etheria .navbar ul{
+  background-color: #231729ca;
+}
+body.etheria .navbar a{
+  background: #1b0e2bbc;
+  color: #49179af4;
+}
+body.etheria .navbar a:hover{
+  background-color: #e4d7fab6;
+}
+body.etheria .shop-box{
+  background:#1a0a20ae;
+}
+body.etheria .theme-item{
+  background:#c3c2c3a4;
+}
+body.etheria button{
+  background:#0a0110;
+  color:#360a5f;
+  border:none;
+  padding:8px 14px;
+  border-radius:10px;
+  cursor:pointer;
 }
 
 /* Realm of Celestial Beings */
@@ -169,6 +214,10 @@ body.balaak .theme-item{
 body.balaak button{
   background:#100101;
   color:#5f0a0a;
+  border:none;
+  padding:8px 14px;
+  border-radius:10px;
+  cursor:pointer;
 }
 </style>
 <body>
@@ -225,7 +274,11 @@ body.balaak button{
     <button onclick="equipTheme('balaak')">Equip</button>
   </div>
 </div>
-
+<!-- Footer; Contains the credits and sources -->
+<div class="footer">
+         <p>Copyright © Binaday & Rivera 2025</p>
+         <li><a href="Sanggunian.html">Sanggunian</a></li>
+</div>
 <script>
 // load current account
 let currentAccount = JSON.parse(localStorage.getItem("currentAccount"));
@@ -306,7 +359,6 @@ function updateButtons(){
         } else {
           btn.textContent = "Equip";
           btn.disabled = false;
-          btn.style.backgroundColor = "#b07a2a";
         }
       }
     }

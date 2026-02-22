@@ -158,6 +158,7 @@ section h1, section p {
     color: hsl(28, 48%, 39%);
 }
 /* Etheria */
+/* Etheria */
 body.etheria{
   height: 100%;
   margin: 0px;
@@ -165,6 +166,22 @@ body.etheria{
   background-image: url('../assets/Etheria.png');
   background-size: cover;
   font-family: "Cinzel", sans-serif;
+  color:#000000;
+}
+body.etheria h1,
+body.etheria h2,
+body.etheria h3{
+  color: #330a5af4;
+}
+body.etheria .navbar ul{
+  background-color: #231729ca;
+}
+body.etheria .navbar a{
+  background: #1b0e2bbc;
+  color: #49179af4;
+}
+body.etheria .navbar a:hover{
+  background-color: #e4d7fab6;
 }
 
 /* Realm of Celestial Beings */

@@ -149,6 +149,21 @@ button:hover{
   font-size:.9rem;
   opacity:.8;
 }
+/*Styles the footer*/
+.footer{
+    text-align: left;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: hsl(28, 48%, 39%);
+}
+.footer li{
+    text-decoration: none;
+    color: hsl(28, 48%, 39%);
+}
 /* Etheria */
 body.etheria{
   height: 100%;
@@ -157,6 +172,55 @@ body.etheria{
   background-image: url('../assets/Etheria.png');
   background-size: cover;
   font-family: "Cinzel", sans-serif;
+  color:#000000;
+}
+body.etheria h1,
+body.etheria h2,
+body.etheria h3{
+  color: #330a5af4;
+}
+body.etheria .navbar ul{
+  background-color: #231729ca;
+}
+body.etheria .navbar a{
+  background: #1b0e2bbc;
+  color: #49179af4;
+}
+body.etheria .navbar a:hover{
+  background-color: #e4d7fab6;
+}
+body.etheria .quiz-box{
+  background:#231729;
+}
+body.etheria .card{
+  background:#b497cba4;
+}
+body.etheria button{
+  background:#0d011dab;
+  color:#49179af4;
+  font-weight:bold;
+}
+body.etheria button:hover{
+  background:#291043cf;
+}
+body.etheria .choice{
+  background:#331652;
+}
+body.etheria .feedback{
+  color:#340a4bf4;
+  font-style:italic;
+}
+body.etheria .score{
+  color:#330a5af4;
+}
+body.etheria .score-bar{
+  background:#a18bbd;
+}
+body.etheria .score-fill{
+  background:linear-gradient(90deg,#471167, #10053e);
+}
+body.etheria .review{
+  background:#a583c0a4;
 }
 
 /* Realm of Celestial Beings */
@@ -192,6 +256,39 @@ body.devas .navbar a{
 }
 body.devas .navbar a:hover{
   background-color: #d7dffab6;
+}
+body.devas .quiz-box{
+  background:#9bb2f7c3;
+}
+body.devas .card{
+  background:#ffffffa4;
+}
+body.devas button{
+  background:#b4d0f5b0;
+  color:#ceb25dd1;
+  font-weight:bold;
+}
+body.devas button:hover{
+  background:#256ff7b6;
+}
+body.devas .choice{
+  background:#b4d0f5b0;
+}
+body.devas .feedback{
+  color:#207aa0f4;
+  font-style:italic;
+}
+body.devas .score{
+  color:#8498d4f4;
+}
+body.devas .score-bar{
+  background:#ffffffdb;
+}
+body.devas .score-fill{
+  background:linear-gradient(90deg,#9ac6e1, #decc97d1);
+}
+body.devas .review{
+  background:#c3c2c2a4;
 }
 
 /* Balaak */
