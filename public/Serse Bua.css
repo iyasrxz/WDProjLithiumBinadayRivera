@@ -214,6 +214,9 @@ body.realm-of-celestial-beings .navbar a{
 body.realm-of-celestial-beings .navbar a:hover{
   background-color: #525bc0b6;
 }
+body.realm-of-celestial-beings #first h1, body.realm-of-celestial-beings #second h1, body.realm-of-celestial-beings #third h1, body.realm-of-celestial-beings #fourth h1, body.realm-of-celestial-beings #fifth h1{
+  background-color:hsla(0, 0%, 100%, 0.411)
+}
 
 /* Devas */
 body.devas{
