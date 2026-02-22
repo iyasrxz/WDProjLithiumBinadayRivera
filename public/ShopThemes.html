@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Instrument Serif' rel='stylesheet'>
     <link rel="stylesheet" href="available.css">
+    <script src="Priv.js" defer></script>
 </head>
 <style>
 .navbar ul{
@@ -229,10 +230,6 @@ body.balaak button{
 // load current account
 let currentAccount = JSON.parse(localStorage.getItem("currentAccount"));
 
-if (!currentAccount) {
-  alert("No account logged in.");
-  window.location.href = "../login.html"; // adjust if needed
-}
 
 // get data from account
 let points = currentAccount.points || 0;
