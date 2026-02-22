@@ -115,8 +115,15 @@ body.etheria .navbar a:hover{
   background-color: #e4d7fab6;
 }
 body.etheria .shop-box{
-  background:#1a0a20ae;
+  background:#3c1a6056;
 }
+body.etheria .shop-box h1{
+  color: #fffffff4;
+}
+body.etheria .shop-item h3,p{
+  color: #fffffff4;
+}
+
 body.etheria .theme-item{
   background:#c3c2c3a4;
 }
@@ -231,4 +238,10 @@ body.balaak button{
   padding:8px 14px;
   border-radius:10px;
   cursor:pointer;
+}
+body.balaak .shop-box h1{
+  color: #fffffff4;
+}
+body.balaak .shop-item h3,p{
+  color: #fffffff4;
 }
