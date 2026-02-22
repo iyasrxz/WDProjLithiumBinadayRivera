@@ -128,6 +128,9 @@ h3{
 #first p, #second p, #third p, #fourth p, #fifth p{
     background-color:hsla(0, 3%, 6%, 0.411)
 }
+#first h1, #second h1, #third h1, #fourth h1, #fifth h1{
+    background-color:hsla(0, 3%, 6%, 0.411)
+}
 /* Creates the transition and format for the texts */
 section h1, section p {
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
@@ -231,7 +234,7 @@ body.balaak{
 body.balaak h1,
 body.balaak h2,
 body.balaak h3{
-  color: #4b0a0af4;
+  color: #720e0ef4;
 }
 body.balaak .navbar ul{
   background-color: rgba(49, 7, 7, 0.7);
@@ -242,4 +245,8 @@ body.balaak .navbar a{
 }
 body.balaak .navbar a:hover{
   background-color: #270707b6;
+}
+
+body.balaak #first h1, body.balaak #second h1, body.balaak #third h1, body.balaak #fourth h1, body.balaak #fifth h1{
+  background-color:hsla(0, 0%, 100%, 0.411)
 }
