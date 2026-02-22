@@ -50,6 +50,7 @@ html, body{
     margin-top: 10px;
     margin-left: 10px;
 }
+/* Specifies the look of the animated elements */
 .animate{
     opacity: 0;
     animation: fadeIn 5s ease-in-out;
@@ -60,6 +61,7 @@ html, body{
     transform: translateY(0);
     opacity: 1;
 }
+/* Specifies how the images would look like */
 .images{
     height: 100vh;
     background-image: url('./assets/mama.jpg');
@@ -69,6 +71,7 @@ html, body{
     background-repeat: no-repeat;
     background-blend-mode: difference;
 }
+/*Designs the first container for the first slide*/
 .image-container{
     display: flex;
     width: 100%;
@@ -85,6 +88,7 @@ html, body{
     height: auto;
     object-fit: cover;
 }
+/*Specifies how the fade in animation would look like*/
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -93,6 +97,7 @@ html, body{
         opacity: 1;
     }
 }
+/*The design and styling for the fireworks and particles*/
 #boogsh{
     position: absolute;
     top: 0;
@@ -112,6 +117,7 @@ html, body{
     transform: translateY(0);
     opacity: 1;
 }
+/*Styles the second container for the second slide*/
 .brilyante{
     min-height: 100vh;
     width: 100%;
@@ -127,6 +133,7 @@ html, body{
     perspective: 1000px;
     display: flex;   
 }
+/*Animates the brilyantes (gems) to spin*/
 .animate1{
     width: 150px;
     animation: spinY 6s linear infinite;
@@ -141,6 +148,7 @@ html, body{
     }
     
 }
+/*Designs the card for the hovered element*/
 .card{
     position: relative;
     width:auto;
@@ -198,6 +206,7 @@ html, body{
     opacity: 1;
     transform: rotateY(0deg) translateY(0);
 }
+/*Designs the container and navigations for the third slide*/
 .navi-intro{
     flex-basis: 100%;
     width: 100%;
@@ -218,6 +227,7 @@ html, body{
     color: hsl(0, 0%, 0%);
     text-decoration:none;
 }
+/*Designs the button*/
 .button a{
     display: inline-block;
     padding: auto;

@@ -8,7 +8,7 @@
     <meta name="author" content="RIVERA, Brianna Aliah B. & BINADAY, Aliya Louise">
     <title>Eteka Aneya Ivi</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="public/available.css">
+    <link rel="stylesheet" href="public/available.css"> <!-- This stylesheet makes the webpage visible/available for all devices -->
     <link rel="icon" href="assets/encantadia_logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
@@ -28,17 +28,20 @@
             <li><a href="public/ShopThemes.html" class="themes-btn">🛒Themes</a></li>
          </ul>
         </nav>
-
+      <!--Creates a container for the first slide of the webpage-->
       <section class="images">
          <div class ="image-container">
             <img src="assets/daTitle.png" class="animate" alt="Avoya Image" style="display: block; margin: 0 auto; width: auto; height: 100vh; align-items:center;">
+            <!--Contains the ID used for the firework animation-->
             <canvas id="boogsh"></canvas>
          </div>
    </section>
-
+      <!--Creates another container, but this time it's for the second slide of the webpage-->
       <section class ="brilyante">
          <div class = "brilyante-container">
+            <!--The card for the hovered element; Contains the ID for CSS card styling-->
             <div class ="card">
+            <!--The class animate1 creates the basis for the element spin animation-->
             <img src="assets/apoy.png" class="animate1" alt="Brilyante Image">
             <div class="card-informationz">
                <h3>The Fire Gem - Ang Brilyante ng Apoy</h3>
@@ -77,7 +80,7 @@
             </div>
          </div>
       </section>
-
+      <!--Creates another container for the third slide; It is the container for the main navigations-->
       <section class ="navi">
          <div class="navi-container">
             <div class="navi-intro">
@@ -85,13 +88,15 @@
             <p> Explore the lore, characters, past, and language. If you haven't yet, sign up now and join us in appreciating 
                the art of Philippine cinema.
             </p>
+            <!-- Directs the user to create an account before clicking any navigation link -->
             <div class = "button">
                <a href="public/SignUp.html">Sign Up</a>
             </div>
             </div>
+            <!-- This section is the container for the navigation cards -->
             <div class ="Yanarteya">
-               <a href="public/Yanarteya.html" class = "cardd">
-               <img src="assets/encantadia_past.jpg" alt="Yanarteya Image">
+               <a href="public/Yanarteya.html" class = "cardd"> <!-- Makes it so that when clicked, the user will be directed to the linked webpage -->
+               <img src="assets/encantadia_past.jpg" alt="Yanarteya Image"> <!-- Adds an image to the card; Adds visuals for the user -->
                <div class ="Yanarteya-content">
                <h3>Yanarteya: The Past</h3>
                <p>The history of Encantadia.
@@ -136,6 +141,7 @@
 
       </section>
 
+      <!-- Connects it to the javascript file for the animations -->
       <script src="index.js"></script>
 
       <!-- Footer; Used for copyright and link references -->
