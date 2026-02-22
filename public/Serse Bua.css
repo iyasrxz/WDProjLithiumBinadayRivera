@@ -186,6 +186,9 @@ body.etheria .navbar a{
 body.etheria .navbar a:hover{
   background-color: #e4d7fab6;
 }
+body.etheria #first h1, body.etheria #second h1, body.etheria #third h1, body.etheria #fourth h1, body.etheria #fifth h1{
+  background-color:hsla(0, 0%, 100%, 0.411)
+}
 
 /* Realm of Celestial Beings */
 body.realm-of-celestial-beings{
