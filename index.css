@@ -309,13 +309,12 @@ html, body{
     color: hsl(28, 48%, 39%);
 
 }
-/* Etheria */
+
 /* Etheria */
 body.etheria{
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-image: url('../assets/Etheria.png');
   background-size: cover;
   font-family: "Cinzel", sans-serif;
   color:#000000;
@@ -341,9 +340,23 @@ body.realm-of-celestial-beings{
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-image: url('../assets/RealmOfCelestialBeings.png');
   background-size: cover;
   font-family: "Bitter";
+}
+body.realm-of-celestial-beings h1,
+body.realm-of-celestial-beings h2,
+body.realm-of-celestial-beings h3{
+  color: #0c0755f4;
+}
+body.realm-of-celestial-beings .navbar ul{
+  background-color: #3d4364ca;
+}
+body.realm-of-celestial-beings .navbar a{
+  background: #e1e2e6bc;
+  color: #0c0755f4;
+}
+body.realm-of-celestial-beings .navbar a:hover{
+  background-color: #525bc0b6;
 }
 
 /* Devas */

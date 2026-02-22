@@ -232,6 +232,54 @@ body.realm-of-celestial-beings{
   background-size: cover;
   font-family: "Bitter";
 }
+body.realm-of-celestial-beings h1,
+body.realm-of-celestial-beings h2,
+body.realm-of-celestial-beings h3{
+  color: #0c0755f4;
+}
+body.realm-of-celestial-beings .navbar ul{
+  background-color: #3d4364ca;
+}
+body.realm-of-celestial-beings .navbar a{
+  background: #e1e2e6bc;
+  color: #0c0755f4;
+}
+body.realm-of-celestial-beings .navbar a:hover{
+  background-color: #525bc0b6;
+}
+body.realm-of-celestial-beings .quiz-box{
+  background:#3d4364ca;
+}
+body.realm-of-celestial-beings .card{
+  background:#ffffffa4;
+}
+body.realm-of-celestial-beings button{
+  background:#b4d0f5b0;
+  color:#0c0755f4;
+  font-weight:bold;
+}
+body.realm-of-celestial-beings button:hover{
+  background:#5f91ecb6;
+}
+body.realm-of-celestial-beings .choice{
+  background:#235494b0;
+}
+body.realm-of-celestial-beings .feedback{
+  color:#2248a7b0;
+  font-style:italic;
+}
+body.realm-of-celestial-beings .score{
+  color:#0c0755f4;
+}
+body.realm-of-celestial-beings .score-bar{
+  background:#ffffffd1;
+}
+body.realm-of-celestial-beings .score-fill{
+  background:linear-gradient(90deg,#4660a7e1, #15157cd1);
+}
+body.realm-of-celestial-beings .review{
+  background:#ebe8e8a4;
+}
 
 /* Devas */
 body.devas{

@@ -257,6 +257,33 @@ body.realm-of-celestial-beings{
   background-repeat: repeat;
   font-family: "Bitter";
 }
+body.realm-of-celestial-beings h1,
+body.realm-of-celestial-beings h2,
+body.realm-of-celestial-beings h3{
+  color: #0c0755f4;
+}
+body.realm-of-celestial-beings .navbar ul{
+  background-color: #3d4364ca;
+}
+body.realm-of-celestial-beings .navbar a{
+  background: #e1e2e6bc;
+  color: #0c0755f4;
+}
+body.realm-of-celestial-beings .navbar a:hover{
+  background-color: #5f91ecb6;
+}
+body.realm-of-celestial-beings .filter-btn {
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #0c0755f4;
+  cursor: pointer;
+}
+body.realm-of-celestial-beings .filter-btn:hover {
+  background: #273d86b6;
+}
+body.realm-of-celestial-beings .filter-btn.active {
+  background: #ffffff;
+}
 
 /* Devas */
 body.devas{
@@ -295,6 +322,7 @@ body.devas .filter-btn:hover {
 body.devas .filter-btn.active {
   background: #ffffff;
 }
+
 /* Balaak */
 body.balaak{
   height: 100%;
