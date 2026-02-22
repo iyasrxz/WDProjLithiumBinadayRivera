@@ -89,6 +89,9 @@ button{
     text-decoration: none;
     color: hsl(28, 48%, 39%);
 }
+.footer p{
+    background: none !important;
+}
 /* Etheria */
 body.etheria{
   height: 100%;
@@ -120,7 +123,7 @@ body.etheria .shop-box{
 body.etheria .shop-box h1{
   color: #fffffff4;
 }
-body.etheria .shop-item h3,p{
+body.etheria .shop-item h3, body.etheria .shop-item p{
   color: #fffffff4;
   background:#41035696;
 }
@@ -244,6 +247,6 @@ body.balaak button{
 body.balaak .shop-box h1{
   color: #fffffff4;
 }
-body.balaak .shop-item h3,p{
+body.balaak .shop-item h3, body.balaak .shop-item p{
   color: #fffffff4;
 }
