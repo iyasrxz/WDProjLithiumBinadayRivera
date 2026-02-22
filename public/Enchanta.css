@@ -283,6 +283,7 @@ body.etheria .intro{
       background: #3c1a6056;
       border-top: 2px solid #000;
       border-bottom: 2px solid #000;
+      background-color: rgba(255, 255, 255, 0.5);
 }
 /* Realm of Celestial Beings */
 body.realm-of-celestial-beings{
@@ -389,4 +390,5 @@ body.balaak .intro{
       background: #601a1a56;
       border-top: 2px solid #000;
       border-bottom: 2px solid #000;
+      background-color: rgba(255, 255, 255, 0.5);
 }
