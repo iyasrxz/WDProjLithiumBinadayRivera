@@ -219,7 +219,9 @@ body.etheria{
   font-family: "Cinzel", sans-serif;
   color:#000000;
 }
-body.etheria h1,
+body.etheria h1{
+  color: #fffffff4;
+}
 body.etheria h2,
 body.etheria h3{
   color: #3c0173f4;
@@ -237,7 +239,7 @@ body.etheria .navbar a:hover{
 body.etheria .filter-btn {
   border: 1px solid #000;
   background: transparent;
-  color: #4a0e72f4;
+  color: #fffffff4;
   cursor: pointer;
 }
 body.etheria .filter-btn:hover {
@@ -352,7 +354,7 @@ body.balaak .navbar a:hover{
 body.balaak .filter-btn {
   border: 1px solid #000;
   background: transparent;
-  color: #720e0ef4;
+  color: #fffffff4;
   cursor: pointer;
 }
 body.balaak .filter-btn:hover {
