@@ -102,7 +102,7 @@ body.etheria{
 body.etheria h1,
 body.etheria h2,
 body.etheria h3{
-  color: #330a5af4;
+  color: #180030;
 }
 body.etheria .navbar ul{
   background-color: #231729ca;
@@ -122,6 +122,7 @@ body.etheria .shop-box h1{
 }
 body.etheria .shop-item h3,p{
   color: #fffffff4;
+  background:#41035696;
 }
 
 body.etheria .theme-item{
@@ -199,6 +200,7 @@ body.devas .navbar a{
 body.devas .navbar a:hover{
   background-color: #d7dffab6;
 }
+
 /* Balaak */
 body.balaak{
   height: 100%;
@@ -213,7 +215,7 @@ body.balaak{
 body.balaak h1,
 body.balaak h2,
 body.balaak h3{
-  color: #5f0a0a;
+  color: #310000b6;
 }
 body.balaak .navbar ul{
   background-color: rgba(49, 7, 7, 0.7);
@@ -226,7 +228,7 @@ body.balaak .navbar a:hover{
   background-color: #270707b6;
 }
 body.balaak .shop-box{
-  background:#200a0aae;
+  background:#3b0707ae;
 }
 body.balaak .theme-item{
   background:#c3c2c2a4;

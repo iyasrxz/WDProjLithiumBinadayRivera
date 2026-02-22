@@ -208,7 +208,7 @@ html, body{
     text-decoration: none;
     color: hsl(28, 48%, 39%);
 }
-/* Etheria */
+
 /* Etheria */
 body.etheria{
   height: 100%;
@@ -224,7 +224,7 @@ body.etheria h1{
 }
 body.etheria h2,
 body.etheria h3{
-  color: #330a5af4;
+  color: #3c0173f4;
 }
 body.etheria .navbar ul{
   background-color: #231729ca;
