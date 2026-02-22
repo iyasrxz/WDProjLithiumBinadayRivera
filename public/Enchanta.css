@@ -1,8 +1,12 @@
 /* General style of the webpage */
-html,body{
-    min-height:100%;
+html, body{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:difference;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,9 +28,13 @@ main{
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    height: 100px;
+    padding: 10px;
+    overflow: visible;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
 }
 .navbar a{
     background: #e7d2a6;
@@ -42,6 +50,9 @@ main{
 }
 .navbar a:hover{
     background-color:hsla(28, 48%, 39%, 0.217);
+}
+.navbar li{
+    list-style: none;
 }
 .navbar li img{
     margin-top: 10px;
