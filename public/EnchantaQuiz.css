@@ -50,7 +50,7 @@
 body{
   margin:0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background:#cbb38a;
+  background-image: url('../assets/ewan.png');
 }
 /* Main container */
 .quiz-box{
@@ -218,4 +218,37 @@ body.balaak .navbar a{
 }
 body.balaak .navbar a:hover{
   background-color: #270707b6;
+}
+body.balaak .quiz-box{
+  background:#200a0aae;
+}
+body.balaak .card{
+  background:#c3c2c2a4;
+}
+body.balaak button{
+  background:#100101;
+  color:#5f0a0a;
+  font-weight:bold;
+}
+body.balaak button:hover{
+  background:#270707b6;
+}
+body.balaak .choice{
+  background:#521616;
+}
+body.balaak .feedback{
+  color:#4b0a0af4;
+  font-style:italic;
+}
+body.balaak .score{
+  color:#4b0a0af4;
+}
+body.balaak .score-bar{
+  background:#b4a5a5;
+}
+body.balaak .score-fill{
+  background:linear-gradient(90deg,#4b0404, #000000);
+}
+body.balaak .review{
+  background:#c3c2c2a4;
 }

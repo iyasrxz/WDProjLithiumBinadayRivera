@@ -7,7 +7,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #f2e1bf;
+  background-image: url('../assets/ewan.png');
 }
 
 html, body{
@@ -16,7 +16,7 @@ html, body{
     margin: 0px;
     padding: 0px;
     background-size:cover;
-    background-repeat:no-repeat;
+    background-repeat: repeat;
 }
 
 .title {
