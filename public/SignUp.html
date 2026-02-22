@@ -8,17 +8,17 @@
     <meta name="author" content="RIVERA, Brianna Aliah B. & BINADAY, Aliya Louise">
     <title>Eteka Aneya Ivi</title>
     <link rel="stylesheet" href="SignUp.css">
-    <link rel="stylesheet" href="public/available.css">
+    <link rel="stylesheet" href="public/available.css"> <!-- This stylesheet makes the webpage visible/available for all devices -->
     <link rel="icon" href="assets/encantadia_logo.png" type="image/png">
    </head>
    <body>
       <!-- Container for the Sign Up, Log in, and Log Out options -->
       <div class = "container">
          <h2>Sign Up</h2>
-         <input id = "username" type="text" placeholder="Username">
-         <input id = "pass" type="password" placeholder="Password">
+         <input id = "username" type="text" placeholder="Username"> <!--Prompts the user to enter their username-->
+         <input id = "pass" type="password" placeholder="Password"> <!--Prompts the user to enter their password-->
          
-         <select id = "choice">
+         <select id = "choice"> <!--Prompts the user to select their preferred kingdom-->
             <option value="" disabled selected>Select Kingdom</option>
             <option value="Hathoria">Hathoria</option>
             <option value="Lireo">Lireo</option>
@@ -26,28 +26,30 @@
             <option value="Adamya">Adamya</option>
          </select>      
 
+         <!--Once the button is clicked, it runs/calls the signUp() function in JS-->
          <button onclick = "signUp()">Sign Up</button>
          <hr>
 
          <h2> Log In </h2>
-         <input id = "usernameLogin" type="text" placeholder="Username">
-         <input id = "passLogin" type="password" placeholder="Password">
+         <input id = "usernameLogin" type="text" placeholder="Username"> <!--Prompts the user to enter their username for logging in-->
+         <input id = "passLogin" type="password" placeholder="Password"> <!--Prompts the user to enter their password for logging in-->
+         <!--Once the button is clicked, it runs/calls the logIn() function in JS-->
          <button onclick = "logIn()">Log In</button>
 
          <h2> Log Out </h2>
-         <button onclick = "logOut()">Log Out</button>
+         <button onclick = "logOut()">Log Out</button> <!--Once the button is clicked, it runs/calls the logOut() function in JS-->
       </div>
 
-   <div id = "popup" class = "popup">
+   <div id = "popup" class = "popup"> <!--This is the pop up that appears once the user clicks the button for signing up. It contains the ID for CSS styling and JS manipulation-->
       <div class = "popup-content">
          <img id = "popupImage" src="" alt="Popup Image">
          <p id = "popupText"></p>
-         <button onclick="closePopUp()">Avisala Meiste</button>
+         <button onclick="closePopUp()">Avisala Meiste</button> <!--Closes the pop up-->
       </div>
    </div>
    </body>     
    
-   <script src="SignUp.js"></script>
+   <script src="SignUp.js"></script> <!--Links the JS file to the HTML file, allowing the functions in the JS file to be used in the HTML file-->
    
 
 </html>

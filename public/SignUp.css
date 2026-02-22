@@ -1,3 +1,4 @@
+/*Styles the general look of the webpage*/
 html, body{
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -10,6 +11,7 @@ html, body{
     justify-content: center;
     align-items: center;
 }
+/*Styles the container that holds the main details*/
 .container{
     background-color: rgba(237, 230, 230, 0.7);
     padding: 40px;
@@ -20,6 +22,7 @@ html, body{
     backdrop-filter: blur(10px);
 }
 
+/*Styles all input and select aspects of the webpage*/
 input, select{
     width: 100%;
     padding: 10px;
@@ -27,7 +30,7 @@ input, select{
     border: none;
     border-radius: 5px;
 }
-
+/*Styles the buttons*/
 button{
     width: 100%;
     padding: 10px;
@@ -41,14 +44,14 @@ button{
 button:hover{
     background-color: #1e1e1e;
 }
-
+/*Styles the dashboard*/
 #dashboard{
     margin-top: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
-
+/*Styles the custom box and modal*/
 .custom-box{
     margin-top: 20px;
     padding: 20px;
@@ -83,12 +86,12 @@ button:hover{
     height: auto;
     border-radius: 10px;
 }
-
+/*Defines the animations*/
 @keyframes pop{
     from {transform: scale (0.5); opacity : 0;}
     to {transform: scale (1); opacity : 1;}
 }
-
+/*Designs the pop-ups*/
 .popup {
     display: none;
     position: fixed;
