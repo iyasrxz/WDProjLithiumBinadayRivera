@@ -41,7 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
+// When the page finishes loading, get the saved theme from localStorage.
+// If no theme is saved, use "default", then apply the theme to the page.
 window.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("currentAccount");
   if (!saved) return;
