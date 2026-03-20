@@ -54,21 +54,21 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
 #### Create Account
 #### ![Create Account](./wireframes/Q4Create_Account.png)
 #### Sang'gre Pirena
-#### ![sang'gre Pirena](./wireframes/Q4Sang'gre_Pirena.png)
+#### ![sang'gre Pirena](./wireframes/Q4Sang'gre Pirena.png)
 #### Sang'gre Amihan
-#### ![sang'gre Amihan](./wireframes/Q4Sang'gre_Amihan.png)
+#### ![sang'gre Amihan](./wireframes/Q4Sang'gre Amihan.png)
 #### Sang'gre Alena
-#### ![sang'gre Alena](./wireframes/Q4Sang'gre_Alena.png)
+#### ![sang'gre Alena](./wireframes/Q4Sang'gre Alena.png)
 #### Sang'gre Danaya
-#### ![sang'gre Danaya](./wireframes/Q4Sang'gre_Danaya.png)
+#### ![sang'gre Danaya](./wireframes/Q4Sang'gre Danaya.png)
 #### Log In
-#### ![Log In](./wireframes/Q4Log_In.png)
+#### ![Log In](./wireframes/Q4Log In.png)
 #### Avoya (Home Page)
 #### ![Avoya](./wireframes/Q4Avoya.png)
 #### Yanarteya
 #### ![Yanarteya](./wireframes/Q4Yanarteya.png)
 #### Serse Bua
-#### ![Serse Bua](./wireframes/Q4Serse_Bua.png)
+#### ![Serse Bua](./wireframes/Q4Serse Bua.png)
 #### Gajad(1)
 #### ![Gajad](./wireframes/Q4Gajad(1).png)
 #### Gajad(2)
