@@ -17,6 +17,10 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
 
 ### Final Modification Wireframes:
 [Q4 Wireframes](https://www.canva.com/design/DAHDZ09l1qs/IGmjmdVDn0kqQ0Hyceaj8w/edit?utm_content=DAHDZ09l1qs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+#### Themes
+#### ![Themes](./wireframes/Q4Themes.png)
+#### Profile
+#### ![Profile](./wireframes/Q4Profile.png)
 
 ******
 ### Webpage Breakdown:
@@ -48,33 +52,33 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
 [Q2 Wireframes](https://www.canva.com/design/DAG3F6QYVfE/8cudTpAn4JjRwmwoI6iNuQ/edit?utm_content=DAG3F6QYVfE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 [Q3 Wireframes](https://www.canva.com/design/DAG9u0QO_z8/k44gLPl9cvsCLM--HbEZag/edit?utm_content=DAG9u0QO_z8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 #### Create Account
-#### ![Create Account](./wireframes/(1)Create_Account.png),
+#### ![Create Account](./wireframes/Q4Create_Account.png)
 #### Sang'gre Pirena
-#### ![sang'gre Pirena](./wireframes/Sang'gre_Pirena.png)
+#### ![sang'gre Pirena](./wireframes/Q4Sang'gre_Pirena.png)
 #### Sang'gre Amihan
-#### ![sang'gre Amihan](./wireframes/Sang'gre_Amihan.png)
+#### ![sang'gre Amihan](./wireframes/Q4Sang'gre_Amihan.png)
 #### Sang'gre Alena
-#### ![sang'gre Alena](./wireframes/Sang'gre_Alena.png)
+#### ![sang'gre Alena](./wireframes/Q4Sang'gre_Alena.png)
 #### Sang'gre Danaya
-#### ![sang'gre Danaya](./wireframes/Sang'gre_Danaya.png)
+#### ![sang'gre Danaya](./wireframes/Q4Sang'gre_Danaya.png)
 #### Log In
-#### ![Log In](./wireframes/(2)Log_In.png)
+#### ![Log In](./wireframes/Q4Log_In.png)
 #### Avoya (Home Page)
-#### ![Avoya](./wireframes/(Updated)Avoya.png)
+#### ![Avoya](./wireframes/Q4Avoya.png)
 #### Yanarteya
-#### ![Yanarteya](./wireframes/(Updated)Yanarteya.png)
+#### ![Yanarteya](./wireframes/Q4Yanarteya.png)
 #### Serse Bua
-#### ![Serse Bua](./wireframes/(Updated)Serse_Bua.png)
+#### ![Serse Bua](./wireframes/Q4Serse_Bua.png)
 #### Gajad(1)
-#### ![Gajad](./wireframes/(Updated)Gajad(1).png)
+#### ![Gajad](./wireframes/Q4Gajad(1).png)
 #### Gajad(2)
-#### ![Gajad](./wireframes/(Updated)Gajad(2).png)
+#### ![Gajad](./wireframes/Q4Gajad(2).png)
 #### Enchanta(1)
-#### ![Enchanta](./wireframes/(1)(Updated)Enchanta.png)
+#### ![Enchanta](./wireframes/Q4Enchanta(1).png)
 #### Enchanta(2)
-#### ![Enchanta](./wireframes/(2)(Updated)Enchanta.png)
+#### ![Enchanta](./wireframes/Q4Enchanta(2).png)
 #### Sanggunian
-#### ![Sanggunian](./wireframes/(Updated)Sanggunian.png)
+#### ![Sanggunian](./wireframes/Q4Sanggunian.png)
 ******
 ### Other Notes:
 - This website is dedicated to the **2016 Encantadia Version**. Although a glimpse of the very past (2005) and present (2025) series will be mentioned, this is centered on the 2016 version.
