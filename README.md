@@ -17,6 +17,7 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
 
 ### Final Modification Wireframes:
 [Q4 Wireframes](https://www.canva.com/design/DAHDZ09l1qs/IGmjmdVDn0kqQ0Hyceaj8w/edit?utm_content=DAHDZ09l1qs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+(Other Images below Webpage Breakdown)
 #### Themes
 #### ![Themes](./wireframes/Q4Themes.png)
 #### Profile
@@ -37,15 +38,20 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
 * **Log In**: Allows the user to come back to their account — saving their progress for the enchanta quiz. Log-in also saves the theme picked from the sign up or the themes acquired from answering the enchanta quiz.
 * **Profile**: This will contain an HTML form which allows the user to customize and input/edit their information. The HTML form will contain the user's Email, Bio/About me, Username, Favorite Kingdom and Password. The user's inputs will be saved using the 'Save Changes' button and the account can also be deleted using the 'Delete Profile' button
 * **Avoya: A voyage.** This is the *homepage*. It will showcase *the map, logo, elements, and navigation to other webpages.*
-- 1st Part: Contains animation and acts as the welcoming message.
-- 2nd Part: Contains animations as well and acts as the introduction to the main brilyantes.
-- 3rd Part: Main navigation to the other webpages.
+     - 1st Part: Contains animation and acts as the welcoming message.
+     - 2nd Part: Contains animations as well and acts as the introduction to the main brilyantes.
+     - 3rd Part: Main navigation to the other webpages.
 * **Yanarteya: The past.** It will contain the *website description and the history of Encantadia*—from 2005 to 2016 with a glimpse of the on-going chronicles. Here, pictures, videos, and context will be provided.
 * **Serse Bua: Vision.** From the conflict to the resolutions—this webpage tackles *all the lore of 2016 Encantadia.* There are five sub-pages, each with their own topics. 
 * **Gajad: Natives.** In this webpage, the *original and notable characters* of the 2016 series, along with their abilities and powers, will be tackled.
-- When you go to the webpage, several cards with photos of characters will show up. Once you hover over these cards, simple lores and character origin will show. You can also choose to view them by four categories:All of them, Bathalas only, Royalty only, and Side Characters only. 
+     - When you go to the webpage, several cards with photos of characters will show up. Once you hover over these cards, simple lores and character origin will show. You can also choose to view them by four categories:All of them, Bathalas only, Royalty only, and Side Characters only. 
 * **Enchanta: The language.** A break down of the Encantadia language. This will serve as a *dictionary*. An addition to this webpage is the Enchanta quiz wherein the progress is accounted by the log-in feature. The points obtained from answering the quiz can be used to acquire more themes.
-- This is also a continuous webpage wherein the first sub-page asks the user if they plan to take the easy, medium, or hard quiz difficulty. The second one is the main quiz while the third is the summary of the              entire quiz taken.
+     - This is also a continuous webpage wherein the first sub-page asks the user if they plan to take the easy, medium, or hard quiz difficulty. The second one is the main quiz while the third is the summary of the              entire quiz taken.
+* **Themes**: This will allow users to customize to the webpage using the points acquitred from the Enchanta Quiz. A total of 4 themes can be bought using the points which are:
+     - Etheria (for 10 points) - Etheria is the first kingdom of Encantadia and founder of the Etherian Empire. It was founded by Encantados who worshipped Ether for her ferocity and power.
+     - Realm of Celestial Beings (for 10 points) - Realm of the Celestial Beings is where the deities of Light and Darkness reside. It is also where the Bathalas of Encantadia have originated from.
+     - Devas (for 10 points) - Devas is a divine and legendary continent that is not easily accessible from the world of Encantadia. It is considered as the sacred ground and resting place of all the Encantados who passed away and lived a good life.
+     - Balaak (for 10 points) - Balaak is considered to be the equivalent of the 'Underworld' or Hell in Encantadia, and was ruled by the Hagorn, after the demise of former ruler a God of Chaos which is Arde.
 * **Sanggunian: Sources.** This will contain all the *sources* used for the project.
 ******
 ### Wireframes:
