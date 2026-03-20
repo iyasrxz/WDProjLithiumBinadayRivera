@@ -54,13 +54,13 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
 #### Create Account
 #### ![Create Account](./wireframes/Q4Create_Account.png)
 #### Sang'gre Pirena
-#### ![sang'gre Pirena](./wireframes/Q4Sang'gre_Pirena.png)
+#### ![Sang'gre Pirena](./wireframes/Q4Sang'gre_Pirena.png)
 #### Sang'gre Amihan
-#### ![sang'gre Amihan](./wireframes/Q4Sang'gre_Amihan.png)
+#### ![Sang'gre Amihan](./wireframes/Q4Sang'gre_Amihan.png)
 #### Sang'gre Alena
-#### ![sang'gre Alena](./wireframes/Q4Sang'gre_Alena.png)
+#### ![Sang'gre Alena](./wireframes/Q4Sang'gre_Alena.png)
 #### Sang'gre Danaya
-#### ![sang'gre Danaya](./wireframes/Q4Sang'gre_Danaya.png)
+#### ![Sang'gre Danaya](./wireframes/Q4Sang'gre_Danaya.png)
 #### Log In
 #### ![Log In](./wireframes/Q4Log_In.png)
 #### Avoya (Home Page)
