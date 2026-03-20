@@ -31,6 +31,7 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
      - Sang’gre Danaya: A character lore specific to Sang’gre Danaya, the host of the earth gem. 
 
 * **Log In**: Allows the user to come back to their account — saving their progress for the enchanta quiz. Log-in also saves the theme picked from the sign up or the themes acquired from answering the enchanta quiz.
+* **Profile**: This will contain an HTML form which allows the user to customize and input/edit their information. The HTML form will contain the user's Email, Bio/About me, Username, Favorite Kingdom and Password. The user's inputs will be saved using the 'Save Changes' button and the account can also be deleted using the 'Delete Profile' button
 * **Avoya: A voyage.** This is the *homepage*. It will showcase *the map, logo, elements, and navigation to other webpages.*
 - 1st Part: Contains animation and acts as the welcoming message.
 - 2nd Part: Contains animations as well and acts as the introduction to the main brilyantes.
