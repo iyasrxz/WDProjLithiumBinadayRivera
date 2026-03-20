@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="Sanggunian.css">
     <link rel="stylesheet" href="public/available.css"> <!-- This stylesheet makes the webpage visible/available for all devices -->
     <link rel="icon" href="../assets/encantadia_logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Instrument Serif' rel='stylesheet'>
    </head> 
    <body>
         <!-- Navbar; Contains the navigation and links to other webpages -->
@@ -17,6 +20,7 @@
              <ul>
                 <li><img src="../assets/encantadia_logo.png" alt="Encantadia Logo" style="width:50px;height:50px;"></li>
                 <li><a href = "../index.html">Avoya</a></li>
+                <li><a href="Profile.html">Profile</a></li>
                 <li><a href="Yanarteya.html">Yanarteya</a></li>
                 <li><a href="Serse Bua.html">Serse Bua</a></li>
                 <li><a href="Gajad.html">Gajad</a></li>
@@ -25,7 +29,7 @@
              </ul>
         </nav> 
         <!-- Creates a section that separates the next class from the rest -->
-        <div class = "container">
+        <br><br><div class = "container">
             <!-- Creates a section -->
             <div class ="card" style="overflow-wrap: break-word; width: auto;">
             <h1>References</h1>
@@ -67,6 +71,15 @@
     </div>
 </footer>
 <script>
+    window.addEventListener("DOMContentLoaded", () => {
+     const saved = localStorage.getItem("currentAccount");
+     if (!saved) return;
+
+     const account = JSON.parse(saved);
+
+     // apply saved theme on page load
+     document.body.className = account.activeTheme || "default";
+    });
 </script>
 </body>
 </html>

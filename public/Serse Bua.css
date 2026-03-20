@@ -147,20 +147,55 @@ section h1, section p {
 }
 /* Styles the footer */
 .footer{
-    text-align: left;
-    padding: 0px;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
-    color: hsl(28, 48%, 39%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 25px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:rgba(255,255,255, 0.5);
+    backdrop-filter: blur(6px);
+    font-size: 16px;
+    color:hsl(28,48%,39%);
+    box-sizing:border-box; 
+    z-index:10;
 }
-.footer li{
+.footer-text{
+    display:flex;
+    flex-direction:column; /* stack text vertically */
+}
+.footer-text p{
+    margin:0;
+}
+.footer-text a{
+    display:block;
     text-decoration: none;
-    color: hsl(28, 48%, 39%);
+    color:hsl(28, 48%, 39%);
+    font-size:16px;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #936034,
+        0 0 30px #936034,
+        0 0 40px #936034,
+        0 0 55px #936034,
+        0 0 70px #936034;
 }
-/* Etheria */
+.footer-text a:hover{
+    transform:scale(1.1);
+    color:hsl(28,48%,39%);
+    text-decoration:underline;
+}
+.github-icon{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    transition:transform 0.2s ease;
+}
+.github-icon:hover{
+    transform:scale(1.1);
+}
 /* Etheria */
 body.etheria{
   height: 100%;

@@ -11,9 +11,6 @@ let activeTheme = currentAccount.activeTheme || "";
 document.getElementById("pointsDisplay").textContent =
   "Your Points: " + points;
 
-document.getElementById("pointsDisplay").textContent =
-  "Your Points: " + points;
-
 function buyTheme(themeName, cost){
 
   if(ownedThemes.includes(themeName)){

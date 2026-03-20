@@ -49,7 +49,7 @@ function logIn() {
     const username = document.getElementById("usernameLogin").value;
     const password = document.getElementById("passLogin").value;
 
-    // ✅ load correct account
+    // load correct account
     const saved = localStorage.getItem("account_" + username);
 
     if (!saved) {

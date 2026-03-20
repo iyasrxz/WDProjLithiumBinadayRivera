@@ -1,23 +1,45 @@
-/* General look of the webpage */
-body{
+/* General style of the webpage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('../assets/ewan.png');
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+html, body{
+    height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url('../assets/ewan.png');
     background-size:cover;
-    background-repeat:no-repeat;
-    background-blend-mode:difference;
+    background-repeat: repeat;
 }
-/* Styles the navigation bar */ 
+
+.title {
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 3px;
+    color: #9a6a2f;
+}
+
+/*Styles the navigation bar*/
 .navbar ul{
     display: flex;
-    align-items: center;
     gap: 14px;
-    list-style: none;
+    list-style-type: none;
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0px;
-    padding: 10px 14px;
+    padding: 10px;
+    height: 100px;
     overflow: visible;
     width: 100%;
     position: fixed;
@@ -25,6 +47,7 @@ body{
     top: 0;
     z-index: 10;
 }
+
 .navbar a{
     background: #e7d2a6;
     color:hsl(28, 48%, 38%);
@@ -37,53 +60,85 @@ body{
     font-weight: bold;
     margin-top: 20px;
 }
+
 .navbar a:hover{
     background-color:hsla(28, 48%, 39%, 0.217);
 }
+
 .navbar li{
     float: left;
 }
+
 .navbar li img{
     margin-top: 10px;
     margin-left: 10px;
 }
-/* Styles the class "container" */
-.container{
-    padding: 50px 20px;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    margin: none;
+.themes-btn{
+  background: #e7d2a6;
+  color: hsl(28, 48%, 38%);
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 8px 18px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  white-space: nowrap;
 }
-/* Styles the class "card" */
-.card{
-   border: 1px solid #ccc;
-   border-radius: 8px;
-   padding: 20px;
-   width: 450px;
-   background-color: rgba(255, 255, 255, 0.8);
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   margin-top: 16px;
-   overflow-wrap: break-word;
+.themes-btn:hover{
+  background-color: hsla(28, 48%, 39%, 0.217);
 }
-footer {
-      background: #cdb07a;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 25px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:rgba(255,255,255, 0.5);
+    backdrop-filter: blur(6px);
+    font-size: 16px;
+    color:hsl(28,48%,39%);
+    box-sizing:border-box; 
+    z-index:10;
 }
-
-.icon span {
-      display: inline-block;
-      width: 28px;
-      height: 28px;
-      border: 2px solid #000;
-      margin-left: 10px;
+.footer-text{
+    display:flex;
+    flex-direction:column; /* stack text vertically */
 }
-
-
+.footer-text p{
+    margin:0;
+}
+.footer-text a{
+    display:block;
+    text-decoration: none;
+    color:hsl(28, 48%, 39%);
+    font-size:16px;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #936034,
+        0 0 30px #936034,
+        0 0 40px #936034,
+        0 0 55px #936034,
+        0 0 70px #936034;
+}
+.footer-text a:hover{
+    transform:scale(1.1);
+    color:hsl(28,48%,39%);
+    text-decoration:underline;
+}
+.github-icon{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    transition:transform 0.2s ease;
+}
+.github-icon:hover{
+    transform:scale(1.1);
+}
 /* Etheria */
 body.etheria{
   height: 100%;
