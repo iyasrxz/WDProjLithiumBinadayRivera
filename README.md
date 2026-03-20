@@ -17,6 +17,7 @@ Moving on, in order for us to implement delete we will create a new webpage: Pro
 
 ### Final Modification Wireframes:
 [Q4 Wireframes](https://www.canva.com/design/DAHDZ09l1qs/IGmjmdVDn0kqQ0Hyceaj8w/edit?utm_content=DAHDZ09l1qs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+(Other Images below Webpage Breakdown)
 #### Themes
 #### ![Themes](./wireframes/Q4Themes.png)
 #### Profile
