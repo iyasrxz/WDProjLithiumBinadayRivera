@@ -43,7 +43,6 @@ function signUp() {
     localStorage.setItem("account_" + username, JSON.stringify(account));
 }
 
-
 // log in
 function logIn() {
     const username = document.getElementById("usernameLogin").value;
