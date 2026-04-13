@@ -166,13 +166,12 @@ body.etheria .shop-item h3, body.etheria .shop-item p{
   color: #fffffff4;
   background:#41035696;
 }
-
 body.etheria .theme-item{
   background:#c3c2c3a4;
 }
 body.etheria button{
-  background:#0a0110;
-  color:#360a5f;
+  background: #836f91;
+  color: #320061;
   border:none;
   padding:8px 14px;
   border-radius:10px;
@@ -204,7 +203,7 @@ body.realm-of-celestial-beings .navbar a:hover{
   background-color: #525bc0b6;
 }
 body.realm-of-celestial-beings .shop-box{
-  background:#363d65ca;
+  background:#565c81c9;
 }
 body.realm-of-celestial-beings .theme-item{
   background:#c3c2c3a4;
@@ -270,14 +269,14 @@ body.balaak .navbar a:hover{
   background-color: #270707b6;
 }
 body.balaak .shop-box{
-  background:#3f0707ae;
+  background:#521111d1;
 }
 body.balaak .theme-item{
-  background:#c3c2c2a4;
+  background:#b59898ba;
 }
 body.balaak button{
-  background:#100101;
-  color:#5f0a0a;
+  background: #795b5bd4;
+  color: #751a1a;
   border:none;
   padding:8px 14px;
   border-radius:10px;

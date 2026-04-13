@@ -284,21 +284,21 @@ body.realm-of-celestial-beings .navbar a:hover{
   background-color: #525bc0b6;
 }
 body.realm-of-celestial-beings .quiz-box{
-  background:#3d4364ca;
+  background:#59618aca;
 }
 body.realm-of-celestial-beings .card{
   background:#ffffffa4;
 }
 body.realm-of-celestial-beings button{
-  background:#b4d0f5b0;
+  background:#7b99c1b0;
   color:#0c0755f4;
   font-weight:bold;
 }
 body.realm-of-celestial-beings button:hover{
-  background:#5f91ecb6;
+  background:#9fb2d5b6;
 }
 body.realm-of-celestial-beings .choice{
-  background:#235494b0;
+  background:#7b99c1c4;
 }
 body.realm-of-celestial-beings .feedback{
   color:#2248a7b0;
@@ -342,21 +342,21 @@ body.devas .navbar a:hover{
   background-color: #d7dffab6;
 }
 body.devas .quiz-box{
-  background:#9bb2f7c3;
+  background:#e5d6a1c9;
 }
 body.devas .card{
   background:#ffffffa4;
 }
 body.devas button{
-  background:#b4d0f5b0;
-  color:#ceb25dd1;
+  background:#dfc9925e;
+  color:#8498d4f4;
   font-weight:bold;
 }
 body.devas button:hover{
-  background:#256ff7b6;
+  background:#ced3dbb6;
 }
 body.devas .choice{
-  background:#b4d0f5b0;
+  background:#c0cee3ad;
 }
 body.devas .feedback{
   color:#207aa0f4;
@@ -372,7 +372,7 @@ body.devas .score-fill{
   background:linear-gradient(90deg,#9ac6e1, #decc97d1);
 }
 body.devas .review{
-  background:#c3c2c2a4;
+  background:#bdd2d978;
 }
 
 /* Balaak */
