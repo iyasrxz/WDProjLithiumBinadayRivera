@@ -111,8 +111,8 @@ main{
       height: 360px;
       display: flex;
       flex-direction: column;
-}   
-.box:visited{ 
+}  
+.box:visited{
     text-decoration: none;
     color: black;
 }
@@ -160,11 +160,11 @@ main{
 .numbers-table {
     width: 50%;
     margin: 30px auto;
-    border-collapse: separate; 
+    border-collapse: separate;
     border-spacing: 0;
     border: 1px solid #b07a2a;
     border-radius: 15px;
-    overflow: hidden; 
+    overflow: hidden;
     background-color: #fbf5ea;
 }  
 /*Formats the table */  
@@ -222,7 +222,7 @@ object-fit: contain;
     backdrop-filter: blur(6px);
     font-size: 16px;
     color:hsl(28,48%,39%);
-    box-sizing:border-box; 
+    box-sizing:border-box;
     z-index:10;
 }
 .footer-text{
@@ -266,22 +266,22 @@ object-fit: contain;
   min-width: 320px;
   max-width: 90%;
   margin: 40px auto;          
-  box-sizing: border-box;           
+  box-sizing: border-box;          
   padding: 18px 20px;
-  background: #fbf5ea;   
+  background: #fbf5ea;  
   color: #b07a2a;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.25rem;
   border-radius: 18px;
-  border: 3px solid #b8892f; 
+  border: 3px solid #b8892f;
   text-align: center;      
   transition: 0.25s ease;
 }
 
 .quiz-btn:hover {
   background: #b07a2a;
-  color: #fff3d6;   
+  color: #fff3d6;  
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
@@ -311,7 +311,7 @@ body.etheria .navbar a:hover{
   background-color: #e4d7fab6;
 }
 body.etheria .quiz-btn{
-  background: #02010780;
+  background: rgba(255, 255, 255, 0.5);
   color: #470e72f4;
   border: 3px solid #3a0d67f4;
 }
@@ -418,7 +418,7 @@ body.balaak .navbar a:hover{
   background-color: #270707b6;
 }
 body.balaak .quiz-btn{
-  background: #07010180;
+  background: #ffffffb0;
   color: #720e0ef4;
   border: 3px solid #670d0df4;
 }

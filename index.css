@@ -131,7 +131,7 @@ html, body{
 }
 .brilyante-container{
     perspective: 1000px;
-    display: flex;   
+    display: flex;  
 }
 /*Animates the brilyantes (gems) to spin*/
 .animate1{
@@ -146,7 +146,7 @@ html, body{
     to{
         transform: rotateY(360deg);
     }
-    
+   
 }
 /*Designs the card for the hovered element*/
 .card{
@@ -307,7 +307,7 @@ html, body{
     backdrop-filter: blur(6px);
     font-size: 16px;
     color:hsl(28,48%,39%);
-    box-sizing:border-box; 
+    box-sizing:border-box;
     z-index:10;
 }
 .footer-text{
@@ -358,6 +358,7 @@ body.etheria h1,
 body.etheria h2,
 body.etheria h3{
   color: #330a5af4;
+  background-color:hsla(0, 0%, 100%, 0.411)
 }
 body.etheria .navbar ul{
   background-color: #231729ca;
@@ -382,6 +383,7 @@ body.realm-of-celestial-beings h1,
 body.realm-of-celestial-beings h2,
 body.realm-of-celestial-beings h3{
   color: #0c0755f4;
+  background-color: hsla(0, 0%, 100%, 0.411);
 }
 body.realm-of-celestial-beings .navbar ul{
   background-color: #3d4364ca;
@@ -407,6 +409,7 @@ body.devas h1,
 body.devas h2,
 body.devas h3{
   color: #8498d4f4;
+  background-color: hsla(0, 3%, 6%, 0.411);
 }
 body.devas .navbar ul{
   background-color: #d5b65b56;
@@ -431,6 +434,7 @@ body.balaak h1,
 body.balaak h2,
 body.balaak h3{
   color: #4b0a0af4;
+  background-color: hsla(0, 0%, 100%, 0.411);
 }
 body.balaak .navbar ul{
   background-color: rgba(49, 7, 7, 0.7);

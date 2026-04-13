@@ -163,7 +163,7 @@ button:hover{
     backdrop-filter: blur(6px);
     font-size: 16px;
     color:hsl(28,48%,39%);
-    box-sizing:border-box; 
+    box-sizing:border-box;
     z-index:10;
 }
 .footer-text{
@@ -229,18 +229,18 @@ body.etheria .quiz-box{
   background:#231729;
 }
 body.etheria .card{
-  background:#b497cba4;
+  background:#f6ebffa4;
 }
 body.etheria button{
-  background:#0d011dab;
+  background:#4a3665ab;
   color:#49179af4;
   font-weight:bold;
 }
 body.etheria button:hover{
-  background:#291043cf;
+  background:#726283cf;
 }
 body.etheria .choice{
-  background:#331652;
+  background:#4a3665ab;
 }
 body.etheria .feedback{
   color:#340a4bf4;
@@ -256,7 +256,7 @@ body.etheria .score-fill{
   background:linear-gradient(90deg,#471167, #10053e);
 }
 body.etheria .review{
-  background:#a583c0a4;
+  background:#edd5ffa4;
 }
 
 /* Realm of Celestial Beings */
@@ -415,7 +415,7 @@ body.balaak button:hover{
   background:#270707b6;
 }
 body.balaak .choice{
-  background:#521616;
+  background: #ffffff67;
 }
 body.balaak .feedback{
   color:#4b0a0af4;
