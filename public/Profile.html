@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Instrument Serif' rel='stylesheet'>
-    <script src="Priv.js" defer></script>
-    <script src ="ChangeDev.js" defer></script>
 </head>
 <body>
 <!-- Navbar; Contains the navigation to other webpages -->
@@ -31,6 +29,121 @@
             </li>
          </ul>
 </nav>
+<div class="page">
+<main class = "content-wrap">
+    <section class = "welcome">
+        <h1> Welcome, Encantado/Encantada! </h1>
+        <p> Ikinagagalak namin ang iyong pagdalo! Explore the magic, lore, and every aspect of 2016 Encantadia with us.</p>
+    </section>
+
+    <div class = "auth">
+        <div class = "headers">
+            <button id="hCreate" class="h-btn active" onclick ="switchTab('signup')">Sign Up</button>
+            <button id="hLogin" class="h-btn" onclick ="switchTab('login')">Log In</button>
+        </div>
+
+        <div id="signForm" class="form-cnt">
+            <h2 class = "f-title"> Create your account!</h2>
+            <div class = "input-cnt">
+                <label> Username: </label>
+                <input id = "username" type="text" placeholder="Username">
+            </div>
+            <div class = "input-cnt">
+                <label> Password: </label>
+                <input id = "pass" type="password" placeholder="Password">
+            </div>
+            <div class = "input-cnt">
+                <label> Select Kingdom: </label>
+                <select id = "choice">
+                    <option value="" disabled selected>Select Kingdom</option>
+                    <option value="Hathoria">Hathoria</option>
+                    <option value="Lireo">Lireo</option>
+                    <option value="Sapiro">Sapiro</option>
+                    <option value="Adamya">Adamya</option>
+                </select>
+            </div>
+            <button class = "submit-btn" onclick = "signUp()">Sign Up</button>
+        </div>
+
+        <div id="logForm" class="form-cnt hidden">
+            <h2 class = "f-title"> Log in to your account! </h2>
+            <div class = "input-cnt">
+                <label> Username: </label>
+                <input id = "usernameLogin" type="text" placeholder="Username">
+            </div>
+            <div class = "input-cnt">
+                <label> Password: </label>
+                <input id = "passLogin" type="password" placeholder="Password">
+            </div>
+            <button class="submit-btn" onclick="logIn()">Log In</button>
+        </div>
+    </div>
+
+</main>
+
+<div id="popup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopUp()">✕</button>
+    <img id="popupImage" src="" alt="Kingdom image">
+    <div id="popupText"></div>
+    <button class="popup-close-btn" onclick="closePopUp()">Close</button>
+  </div>
+</div>
+
+<div class = "settings">
+    <header>
+       <h2 style ="margin:0;">Settings</h2>
+    </header>
+
+    <div class ="container">
+        <div class ="sidebar">
+            <h3 id = "dispUser" style = "margin: 5px 0;">Username</h3>
+            <img id="avatar" class="avatar" src="../assets/placeholder.jpg" alt="Profile avatar">
+            <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="handleFileSelect(event)">
+            <button class="change-btn" onclick="document.getElementById('fileInput').click()">Upload New Picture</button>
+            <button id="clearAvatar" class="change-btn" onclick="clearAvatar()">Delete Avatar</button>
+        </div>
+
+        <div class ="mainc">
+            <label>Add Email</label>
+            <input type="email" id="emailInput" placeholder="Enter your email">
+                <button id="saveEmail" onclick="saveEmail()">Save Email</button>
+                <button id="clearEmail" onclick="clearEmail()">Delete Email</button>
+            <label> About me! </label>
+            <textarea id="aboutInput" placeholder="Tell us about yourself..."></textarea>
+                <button id="saveAbout" onclick="saveAbout()">Save About Me</button>
+                <button id="clearAbout" onclick="clearAbout()">Delete About Me</button>
+
+            <div>
+            <label>User Information</label>
+                <input type="text" id="uInfo" placeholder="Enter your username">
+                <span id="displayUsername">[Current Username]</span></br>
+                <button class ="change-btn" onclick="changeUsername()">Change Username</button>
+            </div>
+
+            <div>
+                Favorite Kingdom: <span id = "kingdomLabel">[Current Kingdom]</span></br>
+                <select id="kingdomSelect" onchange="changeKingdom()">
+                    <option value="Hathoria">Hathoria</option>
+                    <option value="Lireo">Lireo</option>
+                    <option value="Sapiro">Sapiro</option>
+                    <option value="Adamya">Adamya</option>
+                </select>
+            </div>
+            
+            <label>Password:</label>
+            <input type="password" id="passwordInput" placeholder="Enter your password">
+                <button id="changePassword" onclick="changePassword()">Change Password</button>
+            <div class ="bye">
+                <button type="button" class ="change-btn delete" onclick="deleteAccount()">Delete Account</button>
+                <button type="button" class = "change-btn" onclick="signOut()" style = "padding: 15px 40px;">Sign Out</button>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 <!-- Footer; Contains the credits and other sources -->  
      <div class="footer">
         <div class="footer-text">

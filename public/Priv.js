@@ -1,11 +1,20 @@
-// This file checks if the user is signed up or logged in by looking for a "currentAccount" in localStorage. If it doesn't find one, it alerts the user and redirects them to the main page (index.html).
+// This file checks whether the user is signed in and has a saved account in localStorage. If not, it alerts the user and redirects them to the Profile page.
 function privatePage() {
-    const currentAccount = JSON.parse(localStorage.getItem("currentAccount"));
-    if (!currentAccount) {
-        alert("You must be logged in to access this page.");
-        window.location.href = "../index.html";
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    let currentAccount = null;
+
+    try {
+        currentAccount = JSON.parse(localStorage.getItem('currentAccount'));
+    } catch (error) {
+        console.error('Failed to parse currentAccount from localStorage', error);
+    }
+
+    if (!isLoggedIn || !currentAccount) {
+        alert('You must be logged in to access this page.');
+        window.location.href = 'Profile.html';
         return;
     }
 }
+
 // Calls the function
 privatePage();
