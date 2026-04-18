@@ -1,17 +1,18 @@
 /* General look of the webpage */
 html, body{
-    height: 100%;
+    min-height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     scroll-snap-type: y mandatory;
     background-color: bisque;
     text-decoration: none;
 }
-
+body {
+    display: flex;
+    flex-direction: column;
+}
 /* Specifies the look of the navigation bar */
 .navbar ul{
     display: flex;
@@ -347,6 +348,7 @@ html, body{
 
 /* Etheria */
 body.etheria{
+  background-color: #2f205b;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -373,6 +375,7 @@ body.etheria .navbar a:hover{
 
 /* Realm of Celestial Beings */
 body.realm-of-celestial-beings{
+  background-color: #314476;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -398,11 +401,11 @@ body.realm-of-celestial-beings .navbar a:hover{
 
 /* Devas */
 body.devas{
+  background-color: #ffc47f;
   height: 100%;
   font-family: "Palatino Linotype", serif;
   margin: 0px;
   padding: 0px;
-  background-image: url('./assets/Devas.png');
   background-size: cover;
 }
 body.devas h1,
@@ -422,11 +425,11 @@ body.devas .navbar a:hover{
 }
 /* Balaak */
 body.balaak{
+  background-color: #570a0a;
   height: 100%;
   font-family: "Instrument Serif", serif;
   margin: 0px;
   padding: 0px;
-  background-image: url('./assets/Balaak.png');
   background-size: cover;
 }
 body.balaak h1,
