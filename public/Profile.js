@@ -1,3 +1,13 @@
+function resetUI() {
+    const avatar = document.getElementById('avatar');
+
+    if (avatar) {
+        avatar.src = "../assets/placeholder.jpg";
+    }
+
+    const fileInput = document.getElementById('fileInput');
+    if (fileInput) fileInput.value = "";
+}
 window.addEventListener("DOMContentLoaded", () => {
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
     const account = getSavedAccount();
@@ -189,6 +199,7 @@ function signOut() {
         localStorage.removeItem(`avatar_${account.username}`);
     }
     localStorage.removeItem('currentAccount');
+    resetUI();
     closePopUp();
     hideSettings();
     const auth = document.querySelector('.auth');
@@ -204,6 +215,7 @@ function deleteAccount() {
         localStorage.removeItem(`avatar_${account.username}`);
     }
     localStorage.removeItem('currentAccount');
+    resetUI();
     closePopUp();
     hideSettings();
     const auth = document.querySelector('.auth');
@@ -325,13 +337,12 @@ function getAvatarKey() {
 
 // load saved avatar on page load
 window.addEventListener("DOMContentLoaded", () => {
+    const account = getSavedAccount();
     const avatar = document.getElementById('avatar');
-    const key = getAvatarKey();
-
+    if (!account || !avatar) return;
+    const key = `avatar_${account.username}`;
     const savedAvatar = localStorage.getItem(key);
-    if (savedAvatar && avatar) {
-        avatar.src = savedAvatar;
-    }
+    avatar.src = savedAvatar ? savedAvatar : "../assets/placeholder.jpg";
 });
 
 //upload or replace avatar
@@ -340,18 +351,13 @@ fileInput.addEventListener('change', function () {
     const avatar = document.getElementById('avatar');
 
     if (!file || !avatar) return;
-
     const reader = new FileReader();
-
     reader.onload = function (e) {
         const imageData = e.target.result;
-
         avatar.src = imageData;
-
         const key = getAvatarKey();
         localStorage.setItem(key, imageData);
     };
-
     reader.readAsDataURL(file);
 });
 
@@ -363,7 +369,6 @@ clearAvatarBtn.addEventListener('click', function () {
     if (avatar) {
         avatar.src = "../assets/placeholder.jpg";
     }
-
     fileInput.value = "";
     localStorage.removeItem(key);
 });
