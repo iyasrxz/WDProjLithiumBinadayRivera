@@ -7,19 +7,9 @@ function resetUI() {
 
     const fileInput = document.getElementById('fileInput');
     if (fileInput) fileInput.value = "";
-}
-window.addEventListener("DOMContentLoaded", () => {
-    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    const account = getSavedAccount();
 
-    if (isLoggedIn && account) {
-        renderAuthenticatedView(account);
-    } else {
-        switchTab('signup');
-        const settings = document.querySelector('.settings');
-        if (settings) settings.classList.add('hidden');
-    }
-});
+    document.body.className = "default";
+}
 
 function getSavedAccount() {
     const saved = localStorage.getItem('currentAccount');
@@ -60,6 +50,16 @@ function renderAuthenticatedView(account) {
 
     const aboutInput = document.getElementById('aboutInput');
     if (aboutInput) aboutInput.value = account.bio || '';
+
+    const avatar = document.getElementById('avatar');
+    if (avatar && account.username) {
+    const key = `avatar_${account.username}`;
+    const savedAvatar = localStorage.getItem(key);
+
+    avatar.src = savedAvatar
+        ? savedAvatar
+        : "../assets/placeholder.jpg";
+    }
 }
 
 function switchTab(type) {
@@ -194,11 +194,6 @@ function hideSettings() {
 
 function signOut() {
     markLoggedIn(false);
-    const account = getSavedAccount();
-    if (account) {
-        localStorage.removeItem(`avatar_${account.username}`);
-    }
-    localStorage.removeItem('currentAccount');
     resetUI();
     closePopUp();
     hideSettings();
@@ -308,25 +303,6 @@ function closePopUp() {
     modal.style.display = "none";
 }
 
-/*const fileInput = document.getElementById('fileInput');
-const avatar = document.getElementById('avatar');
-
-fileInput.addEventListener('change', function() {
-     const file = this.files ? this.files[0] : null;
-     if (file && avatar) {
-         const reader = new FileReader();
-         reader.onload = function(e) {
-             avatar.src = e.target.result;
-         };
-         reader.readAsDataURL(file);
-     }
-});
-
-document.getElementById('clearAvatar').addEventListener('click', function() {
-    avatar.src = "";
-    fileInput.value = "";
-});*/
-
 const fileInput = document.getElementById('fileInput');
 const avatar = document.getElementById('avatar');
 const clearAvatarBtn = document.getElementById('clearAvatar');
@@ -334,16 +310,6 @@ function getAvatarKey() {
     const account = getSavedAccount();
     return account ? `avatar_${account.username}` : "avatar_guest";
 }
-
-// load saved avatar on page load
-window.addEventListener("DOMContentLoaded", () => {
-    const account = getSavedAccount();
-    const avatar = document.getElementById('avatar');
-    if (!account || !avatar) return;
-    const key = `avatar_${account.username}`;
-    const savedAvatar = localStorage.getItem(key);
-    avatar.src = savedAvatar ? savedAvatar : "../assets/placeholder.jpg";
-});
 
 //upload or replace avatar
 fileInput.addEventListener('change', function () {
@@ -371,4 +337,33 @@ clearAvatarBtn.addEventListener('click', function () {
     }
     fileInput.value = "";
     localStorage.removeItem(key);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    const account = getSavedAccount();
+
+    // apply theme
+    if (account && account.activeTheme) {
+        document.body.className = account.activeTheme;
+    } else {
+        document.body.className = "default";
+    }
+
+    // load avatar
+    const avatar = document.getElementById('avatar');
+    if (account && avatar) {
+        const key = `avatar_${account.username}`;
+        const savedAvatar = localStorage.getItem(key);
+        avatar.src = savedAvatar ? savedAvatar : "../assets/placeholder.jpg";
+    }
+
+    // login state
+    if (isLoggedIn && account) {
+        renderAuthenticatedView(account);
+    } else {
+        switchTab('signup');
+        const settings = document.querySelector('.settings');
+        if (settings) settings.classList.add('hidden');
+    }
 });

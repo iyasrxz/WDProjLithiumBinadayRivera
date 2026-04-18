@@ -578,11 +578,61 @@ body.etheria .navbar a{
 body.etheria .navbar a:hover{
   background-color: #e4d7fab6;
 }
-body.etheria .intro{
-      background: #3c1a6056;
-      border-top: 2px solid #000;
-      border-bottom: 2px solid #000;
-      background-color: rgba(255, 255, 255, 0.5);
+body.etheria .settings .mainc input, body.etheria .settings .mainc textarea, body.etheria .settings .mainc select {
+   background: #8787ad;
+}
+body.etheria .navbar a:hover{
+   background-color: #7c52c0b6;
+}
+body.etheria .settings{
+   background: #504871e3;
+}
+body.etheria .settings .mainc {
+   background: #ffffffad;
+}
+body.etheria .settings .mainc label, body.etheria .welcome p{
+   color: #2e0755f4;
+}
+body.etheria .settings .sidebar {
+   background: #b0b7d1c7;
+}
+body.etheria .change-btn {
+   background: #2a0755;
+}
+body.etheria .settings .change-btn.delete {
+   background: transparent;
+   color: hsl(0, 0%, 0%);
+   border: 1px solid hsl(253, 41%, 37%);
+}
+body.etheria #saveEmail, body.etheria #saveAbout, body.etheria #clearEmail, 
+body.etheria #clearAbout, body.etheria #changePassword {
+   background: transparent;
+   color: #2a0755;
+   border: 2px solid #2a0755;
+}
+body.etheria #saveEmail:hover, body.etheria #saveAbout:hover, body.etheria #changePassword:hover {
+  background: linear-gradient(135deg, #9687c2, #8470b3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+body.etheria #saveEmail:active, body.etheria #saveAbout:active, body.etheria #changePassword:active {
+  background: rgba(92, 44, 160, 0.1);
+  color: #2a0755;
+  border-color: #2a0755;
+  transform: translateY(-1px);
+}
+body.etheria #clearEmail:hover, body.etheria #clearAbout:hover {
+  background: rgba(92, 44, 160, 0.1);
+  color: #2a0755;
+  border-color: #2a0755;
+  transform: translateY(-1px);
+}
+body.etheria .settings .change-btn.delete, body.etheria .settings .change-btn.delete:hover {
+  background: #b0b7d1c7;
+  color: #fff;
+  border-color: #2a0755;
+  border-width: 2px;
+  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
 }
 
 /* Realm of Celestial Beings */
@@ -606,20 +656,62 @@ body.realm-of-celestial-beings .navbar a{
   background: #e1e2e6bc;
   color: #0c0755f4;
 }
+body.realm-of-celestial-beings .settings .mainc input, body.realm-of-celestial-beings .settings .mainc textarea, body.realm-of-celestial-beings .settings .mainc select {
+   background: #9ba7bb;
+}
 body.realm-of-celestial-beings .navbar a:hover{
-  background-color: #525bc0b6;
+   background-color: #525bc0b6;
 }
-body.realm-of-celestial-beings .quiz-btn{
-  background: #ffffffbc;
-  color: #0c0755f4;
-  border: 3px solid #0c0755f4;
+body.realm-of-celestial-beings .settings{
+   background: #61678ce3;
 }
-body.realm-of-celestial-beings .intro{
-      background: #ffffffbc;
-      border-top: 2px solid #0c0755f4;
-      border-bottom: 2px solid #0c0755f4;
+body.realm-of-celestial-beings .settings .mainc {
+   background: #ffffffad;
 }
-
+body.realm-of-celestial-beings .settings .mainc label, body.realm-of-celestial-beings .welcome p{
+   color: #0c0755f4;
+}
+body.realm-of-celestial-beings .settings .sidebar {
+   background: #b0b7d1c7;
+}
+body.realm-of-celestial-beings .change-btn {
+   background: #0c0755;
+}
+body.realm-of-celestial-beings .settings .change-btn.delete {
+   background: transparent;
+   color: hsl(0, 0%, 0%);
+   border: 1px solid hsl(28deg 40.89% 36.62%);
+}
+body.realm-of-celestial-beings #saveEmail, body.realm-of-celestial-beings #saveAbout, body.realm-of-celestial-beings #clearEmail, 
+body.realm-of-celestial-beings #clearAbout, body.realm-of-celestial-beings #changePassword {
+   background: transparent;
+   color: #0c0755;
+   border: 2px solid #0c0755;
+}
+body.realm-of-celestial-beings #saveEmail:hover, body.realm-of-celestial-beings #saveAbout:hover, body.realm-of-celestial-beings #changePassword:hover {
+  background: linear-gradient(135deg, #8791c2, #707bb3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+body.realm-of-celestial-beings #saveEmail:active, body.realm-of-celestial-beings #saveAbout:active, body.realm-of-celestial-beings #changePassword:active {
+  background: rgba(48, 44, 160, 0.1);
+  color: #0c0755;
+  border-color: #0c0755;
+  transform: translateY(-1px);
+}
+body.realm-of-celestial-beings #clearEmail:hover, body.realm-of-celestial-beings #clearAbout:hover {
+  background: rgba(48, 44, 160, 0.1);
+  color: #0c0755;
+  border-color: #0c0755;
+  transform: translateY(-1px);
+}
+body.realm-of-celestial-beings .settings .change-btn.delete, body.realm-of-celestial-beings .settings .change-btn.delete:hover {
+  background: #b0b7d1c7;
+  color: #fff;
+  border-color: #0c0755;
+  border-width: 2px;
+  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
+}
 /* Devas */
 body.devas{
   height: 100%;
@@ -644,11 +736,57 @@ body.devas .navbar a{
 body.devas .navbar a:hover{
   background-color: #d7dffab6;
 }
-body.devas .intro{
-      background: #ffffffbc;
-      border-top: 2px solid #8498d4f4;
-      border-bottom: 2px solid #8498d4f4;
+body.devas .settings .mainc input, body.devas .settings .mainc textarea, body.devas .settings .mainc select {
+   background: #fff0cda5;
 }
+body.devas .settings .mainc {
+   background: #ffffffad;
+}
+body.devas .settings .mainc label, body.devas .welcome p{
+   color: #84b5d4f4;
+}
+body.devas .settings .sidebar {
+   background: #f7e4a170;
+}
+body.devas .change-btn {
+   background: #d8c191e3;
+}
+body.devas .settings .change-btn.delete {
+   background: transparent;
+   color: hsl(0, 0%, 0%);
+   border: 1px solid hsl(36, 41%, 37%);
+}
+body.devas #saveEmail, body.devas #saveAbout, body.devas #clearEmail, 
+body.devas #clearAbout, body.devas #changePassword {
+   background: transparent;
+   color: #cfb7617f;
+   border: 2px solid #cfb7617f;
+}
+body.devas #saveEmail:hover, body.devas #saveAbout:hover, body.devas #changePassword:hover {
+  background: linear-gradient(160, 141, 44, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+body.devas #saveEmail:active, body.devas #saveAbout:active, body.devas #changePassword:active {
+  background: rgba(160, 141, 44, 0.1);
+  color: #cfb7617f;
+  border-color: #cfb7617f;
+  transform: translateY(-1px);
+}
+body.devas #clearEmail:hover, body.devas #clearAbout:hover {
+  background: rgba(160, 141, 44, 0.1);
+  color: #cfb7617f;
+  border-color: #cfb7617f;
+  transform: translateY(-1px);
+}
+body.devas .settings .change-btn.delete, body.devas .settings .change-btn.delete:hover {
+  background: #d1cab0c7;
+  color: #fff;
+  border-color: #cfb7617f;
+  border-width: 2px;
+  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
+}
+
 /* Balaak */
 body.balaak{
   height: 100%;
@@ -674,8 +812,56 @@ body.balaak .navbar a{
 body.balaak .navbar a:hover{
   background-color: #270707b6;
 }
-body.balaak .intro{
-      background: #601a1a56;
-      border-top: 2px solid #000;
-      border-bottom: 2px solid #000;
+body.balaak .settings .mainc input, body.balaak .settings .mainc textarea, body.balaak .settings .mainc select {
+   background: #bc8b89a5;
+}
+body.balaak .settings .mainc {
+   background: #ffffffad;
+}
+body.balaak .settings .mainc label, body.balaak .welcome p{
+   color: #5f0000f4;
+}
+body.balaak .settings{
+  background: #8d6060d1;
+}
+body.balaak .settings .sidebar {
+   background: #4f000070;
+}
+body.balaak .change-btn {
+   background: #420000e3;
+}
+body.balaak .settings .change-btn.delete {
+   background: #d1b0b0c7;
+   color: #5c0000;
+   border: 1px solid hsl(0, 100%, 6%);
+}
+body.balaak #saveEmail, body.balaak #saveAbout, body.balaak #clearEmail, 
+body.balaak #clearAbout, body.balaak #changePassword {
+   background: transparent;
+   color: #420000e3;
+   border: 2px solid #420000e3;
+}
+body.balaak #saveEmail:hover, body.balaak #saveAbout:hover, body.balaak #changePassword:hover {
+  background: linear-gradient(160, 141, 44, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+body.balaak #saveEmail:active, body.balaak #saveAbout:active, body.balaak #changePassword:active {
+  background: rgba(160, 44, 44, 0.1);
+  color: #420000e3;
+  border-color: #420000e3;
+  transform: translateY(-1px);
+}
+body.balaak #clearEmail:hover, body.balaak #clearAbout:hover {
+  background: rgba(160, 44, 44, 0.1);
+  color: #420000e3;
+  border-color: #420000e3;
+  transform: translateY(-1px);
+}
+body.balaak .settings .change-btn.delete, body.balaak .settings .change-btn.delete:hover {
+  background: #d1b0b0c7;
+  color: #fff;
+  border-color: #420000e3;
+  border-width: 2px;
+  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
 }
