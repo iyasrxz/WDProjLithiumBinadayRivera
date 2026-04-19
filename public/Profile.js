@@ -8,7 +8,9 @@ function resetUI() {
     const fileInput = document.getElementById('fileInput');
     if (fileInput) fileInput.value = "";
 
-    document.body.className = "default";
+    document.body.className = "";
+    document.body.classList.add("default");
+
 }
 
 function getSavedAccount() {
@@ -193,6 +195,11 @@ function hideSettings() {
 }
 
 function signOut() {
+    const account = getSavedAccount();
+    if (account) {
+        delete account.activeTheme;
+        saveAccountChanges(account);
+    }
     markLoggedIn(false);
     resetUI();
     closePopUp();
@@ -209,6 +216,8 @@ function deleteAccount() {
     if (account) {
         localStorage.removeItem(`avatar_${account.username}`);
     }
+    localStorage.removeItem('currentAccount');
+    localStorage.removeItem('activeTheme');
     localStorage.removeItem('currentAccount');
     resetUI();
     closePopUp();
