@@ -29,15 +29,13 @@
             </li>
          </ul>
 </nav>
-
-<!-- Creates a main content area -->
+<div class="page">
 <main class = "content-wrap">
     <section class = "welcome">
         <h1> Welcome, Encantado/Encantada! </h1>
         <p> Ikinagagalak namin ang iyong pagdalo! Explore the magic, lore, and every aspect of 2016 Encantadia with us.</p>
     </section>
 
-    <!-- Authentication Forms -->
     <div class = "auth">
         <div class = "headers">
             <button id="hCreate" class="h-btn active" onclick ="switchTab('signup')">Sign Up</button>
@@ -67,7 +65,6 @@
             <button class = "submit-btn" onclick = "signUp()">Sign Up</button>
         </div>
 
-        <!-- Login Form -->
         <div id="logForm" class="form-cnt hidden">
             <h2 class = "f-title"> Log in to your account! </h2>
             <div class = "input-cnt">
@@ -83,7 +80,7 @@
     </div>
 
 </main>
-<!-- Popups -->
+
 <div id="popup" class="popup-overlay hidden">
   <div class="popup-box">
     <button class="popup-close" onclick="closePopUp()">✕</button>
@@ -93,7 +90,6 @@
   </div>
 </div>
 
-<!-- The settings panel; Visible when signed in/logged in; Allows the user to manage and change their account informations-->
 <div class = "settings">
     <header>
        <h2 style ="margin:0;">Settings</h2>
@@ -102,7 +98,7 @@
     <div class ="container">
         <div class ="sidebar">
             <h3 id = "dispUser" style = "margin: 5px 0;">Username</h3>
-            <img id="avatar" class="avatar" src="../assets/placeholder.jpg" alt="Profile avatar"> <!-- A temporary placeholder for the user's avatar-->
+            <img id="avatar" class="avatar" src="../assets/placeholder.jpg" alt="Profile avatar">
             <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="handleFileSelect(event)">
             <button class="change-btn" onclick="document.getElementById('fileInput').click()">Upload New Picture</button>
             <button id="clearAvatar" class="change-btn" onclick="clearAvatar()">Delete Avatar</button>
@@ -147,7 +143,7 @@
         </div>
     </div>
 </div>
-
+</div>
 <!-- Footer; Contains the credits and other sources -->  
      <div class="footer">
         <div class="footer-text">
