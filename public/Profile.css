@@ -4,17 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Root variables for consistent theming */
 :root{
     --primary-color: #e7d2a6;
     --secondary-color: hsl(28, 48%, 38%);
     --hover-color: hsla(28, 48%, 39%, 0.217);
 }
+/* Styles the body of the webpage */
 body{
   background: url('../assets/ewan.png');
+  background-size: cover; 
   color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
+/* It's also the standard style for the body and the overall html */
 html, body{
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,29 +28,22 @@ html, body{
     background-size:cover;
     background-repeat: repeat;
 }
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0px;   
-  padding-bottom: 40px;
-}
+/* Styles the title of the webpage */
 .title {
     text-align: center;
     margin: 50px 0;
     letter-spacing: 3px;
     color: #9a6a2f;
 }
+/* Styles the navigation bar */
 .navbar ul{
     display: flex;
     gap: 14px;
     list-style-type: none;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0px;
     padding: 10px;
-    height: 100px;
     overflow: visible;
     width: 100%;
     position: fixed;
@@ -75,40 +73,19 @@ html, body{
     margin-top: 10px;
     margin-left: 10px;
 }
-.welcome {
-  width: 100%;
-  margin: 40px 0 20px;
-  padding: 50px 80px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-.welcome h1 {
-  max-width: 800px;
-  width: 100%;
-  margin-bottom: 15px;
-  border-radius: 15px;
-}
-.welcome p {
-  max-width: 800px;
-  width: 100%;
-  border-radius: 15px;
-}
+/* Styles the p elements inside the class "content-wrap" */
 .content-wrap p{
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
   position: relative;
 }
+/* Styles the h1 elements inside the class "content-wrap" */
 .content-wrap h1{
   font-size: 32px;
   margin-bottom: 20px;
 }
+/* Styles the buttons */
 .themes-btn{
   background: #e7d2a6;
   color: hsl(28, 48%, 38%);
@@ -125,13 +102,15 @@ html, body{
 .themes-btn:hover{
   background-color: hsla(28, 48%, 39%, 0.217);
 }
+/* Styles the "content-wrap" */
 .content-wrap {
-  margin-top: 120px;
+  margin-top: 140px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 20px;
+  padding-top: 50px;
+  min-height: 100vh;
 }
 .content-wrap h1 {
   text-align: center; 
@@ -140,6 +119,7 @@ html, body{
   background: rgba(255, 255, 255, 0.5);
   padding: 20px;
 }
+/* Styles the class "auth" */
 .auth{
   background: white;
   border-radius: 25px;
@@ -149,18 +129,11 @@ html, body{
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-.auth{
-  background: white;
-  border-radius: 25px;
-  padding: 40px;
-  width: 900px;
-  height: 500px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
 .auth h2{
     text-align: center;
     margin-bottom: 30px;
 }
+/* Styles the class "input-cnt" and its other elements */
 .input-cnt{
   display: flex;
   flex-direction: center;
@@ -181,6 +154,7 @@ html, body{
   opacity: 0.6;
   color: white;
 }
+/* Styles the submit button */
 .submit-btn{
   background: rgb(133, 93, 93);
   color: white;
@@ -192,9 +166,11 @@ html, body{
   display: block;
   margin: auto;
 }
+/* Styles the class "hidden" */
 .hidden{
   display: none;
 }
+/* Styles the popup */
 .popup-overlay{
   position: fixed;
   inset: 0;
@@ -241,12 +217,14 @@ html, body{
   background: var(--secondary-color);
   color: white;
 }
+/* Styles the headers */
 .headers{
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   color: white;
 }
+/* Styles "h-btn" and its active state */
 .h-btn{
   flex: 1;
   border: none;
@@ -261,6 +239,7 @@ html, body{
 .h-btn.active{
   background: var(--secondary-color);
 }
+/* styles the inputs for the settings page */
 input[type="text"],
 input[type="password"]{
   background-color: var(--primary-color);
@@ -273,6 +252,7 @@ input[type="password"]{
 input::placeholder{
   color: #fff;
 }
+/* Styles the class "options" */
 .options{
   background: var(--primary-color);
   padding: 15px;
@@ -281,21 +261,10 @@ input::placeholder{
   flex-direction: column;
   gap: 10px;
 }
-.submit-btn{
-  background: var(--secondary-color);
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  display: block;
-  margin: auto;
-}
+/* Styles the settings class */
 .settings{
-  padding-bottom: 80px;
-  margin-bottom: 50px;
   display: none;
+  margin: 20px auto 0;
   max-width: 1100px;
   width: calc(100% - 40px);
   background: rgba(255, 255, 255, 0.95);
@@ -321,13 +290,11 @@ input::placeholder{
   border-radius: 24px;
   padding: 24px;
 }
-.settings .sidebar {
-  flex: 1;
-  max-width: 260px;
-  text-align: center;
-  background: #f3e4c7;
-  border-radius: 20px;
-  padding: 25px;
+.settings .sidebar{
+  flex: 1 1 240px;
+  min-width: 240px;
+  background: var(--primary-color);
+  color: #2a1f12;
 }
 .settings .mainc{
   flex: 2 1 600px;
@@ -363,15 +330,11 @@ input::placeholder{
   min-height: 130px;
   resize: vertical;
 }
-.settings .bye {
+.settings .bye{
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.settings .bye button {
-  width: 48%;
-  padding: 14px;
-  border-radius: 20px;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
 }
 .settings .change-btn{
   padding: 12px 20px;
@@ -381,11 +344,14 @@ input::placeholder{
   color: hsl(28, 48%, 39%);
   border: 1px solid hsl(28, 48%, 39%);
 }
-.settings .container {
+/* Styles the container class inside the settings */
+.container{
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
+/* Styles the avatar image */
 .avatar{
   width: 120px;
   height: 120px;
@@ -393,6 +359,7 @@ input::placeholder{
   object-fit: cover;
   margin-bottom: 20px;
 }
+/* Styles the change buttons for the avatar */
 .change-btn{
   background: var(--secondary-color);
   color: white;
@@ -409,67 +376,11 @@ input::placeholder{
   padding: 10px 20px;
   border-radius: 15px;
 }
+/* Styles such that it fits all screen sizes */
 .mainc{
   width: 100%;
 }
-.delete {
-  background: linear-gradient(135deg, #b88a4a, #9c6b2f);
-  color: #fff;
-  border: none;
-  box-shadow: 0 4px 12px rgba(156, 107, 47, 0.4);
-  transition: all 0.25s ease;
-}
-.delete:hover {
-  background: linear-gradient(135deg, #9c6b2f, #7f5523);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(156, 107, 47, 0.6);
-}
-.delete:active {
-  transform: scale(0.96);
-}
-#saveEmail,
-#saveAbout,
-#changePassword {
-  background: transparent;
-  color: #a06d2c;
-  border: 2px solid #c2a173;
-  border-radius: 18px;
-  padding: 6px 10px;
-  margin-left: 10px;
-  transition: all 0.25s ease;
-}
-#saveEmail:hover,
-#saveAbout:hover,
-#changePassword:hover {
-  background: linear-gradient(135deg, #c2ad87, #b39b70);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-#saveEmail:active,
-#saveAbout:active,
-#changePassword:active {
-  background: rgba(160, 109, 44, 0.1);
-  color: #7f5523;
-  border-color: #a06d2c;
-  transform: translateY(-1px);
-}
-#clearEmail,
-#clearAbout {
-  background: transparent;
-  color: #a06d2c;
-  border: 2px solid #c2a173;
-  border-radius: 18px;
-  padding: 6px 10px;
-  margin-left: 10px;
-  transition: all 0.25s ease;
-}
-#clearEmail:hover,
-#clearAbout:hover {
-  background: rgba(160, 109, 44, 0.1);
-  color: #7f5523;
-  border-color: #a06d2c;
-  transform: translateY(-1px);
-}
+/* Changes that makes the webpage responsive and mobile-friendly */
 @media (max-width: 768px) {
   
   .content-wrap{
@@ -503,12 +414,13 @@ input::placeholder{
     align-items: center;
   }
 }
+/* Styles the footer */
 .footer{
-    position: fixed;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:10px 25px;
+    position:fixed;
     bottom:0;
     left:0;
     width:100%;
@@ -544,6 +456,7 @@ input::placeholder{
     color:hsl(28,48%,39%);
     text-decoration:underline;
 }
+/* The github icons in the footer */
 .github-icon{
     width:30px;
     height:30px;
@@ -578,61 +491,11 @@ body.etheria .navbar a{
 body.etheria .navbar a:hover{
   background-color: #e4d7fab6;
 }
-body.etheria .settings .mainc input, body.etheria .settings .mainc textarea, body.etheria .settings .mainc select {
-   background: #8787ad;
-}
-body.etheria .navbar a:hover{
-   background-color: #7c52c0b6;
-}
-body.etheria .settings{
-   background: #504871e3;
-}
-body.etheria .settings .mainc {
-   background: #ffffffad;
-}
-body.etheria .settings .mainc label, body.etheria .welcome p{
-   color: #2e0755f4;
-}
-body.etheria .settings .sidebar {
-   background: #b0b7d1c7;
-}
-body.etheria .change-btn {
-   background: #2a0755;
-}
-body.etheria .settings .change-btn.delete {
-   background: transparent;
-   color: hsl(0, 0%, 0%);
-   border: 1px solid hsl(253, 41%, 37%);
-}
-body.etheria #saveEmail, body.etheria #saveAbout, body.etheria #clearEmail, 
-body.etheria #clearAbout, body.etheria #changePassword {
-   background: transparent;
-   color: #2a0755;
-   border: 2px solid #2a0755;
-}
-body.etheria #saveEmail:hover, body.etheria #saveAbout:hover, body.etheria #changePassword:hover {
-  background: linear-gradient(135deg, #9687c2, #8470b3);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-body.etheria #saveEmail:active, body.etheria #saveAbout:active, body.etheria #changePassword:active {
-  background: rgba(92, 44, 160, 0.1);
-  color: #2a0755;
-  border-color: #2a0755;
-  transform: translateY(-1px);
-}
-body.etheria #clearEmail:hover, body.etheria #clearAbout:hover {
-  background: rgba(92, 44, 160, 0.1);
-  color: #2a0755;
-  border-color: #2a0755;
-  transform: translateY(-1px);
-}
-body.etheria .settings .change-btn.delete, body.etheria .settings .change-btn.delete:hover {
-  background: #b0b7d1c7;
-  color: #fff;
-  border-color: #2a0755;
-  border-width: 2px;
-  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
+body.etheria .intro{
+      background: #3c1a6056;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Realm of Celestial Beings */
@@ -656,62 +519,20 @@ body.realm-of-celestial-beings .navbar a{
   background: #e1e2e6bc;
   color: #0c0755f4;
 }
-body.realm-of-celestial-beings .settings .mainc input, body.realm-of-celestial-beings .settings .mainc textarea, body.realm-of-celestial-beings .settings .mainc select {
-   background: #9ba7bb;
-}
 body.realm-of-celestial-beings .navbar a:hover{
-   background-color: #525bc0b6;
+  background-color: #525bc0b6;
 }
-body.realm-of-celestial-beings .settings{
-   background: #61678ce3;
+body.realm-of-celestial-beings .quiz-btn{
+  background: #ffffffbc;
+  color: #0c0755f4;
+  border: 3px solid #0c0755f4;
 }
-body.realm-of-celestial-beings .settings .mainc {
-   background: #ffffffad;
+body.realm-of-celestial-beings .intro{
+      background: #ffffffbc;
+      border-top: 2px solid #0c0755f4;
+      border-bottom: 2px solid #0c0755f4;
 }
-body.realm-of-celestial-beings .settings .mainc label, body.realm-of-celestial-beings .welcome p{
-   color: #0c0755f4;
-}
-body.realm-of-celestial-beings .settings .sidebar {
-   background: #b0b7d1c7;
-}
-body.realm-of-celestial-beings .change-btn {
-   background: #0c0755;
-}
-body.realm-of-celestial-beings .settings .change-btn.delete {
-   background: transparent;
-   color: hsl(0, 0%, 0%);
-   border: 1px solid hsl(28deg 40.89% 36.62%);
-}
-body.realm-of-celestial-beings #saveEmail, body.realm-of-celestial-beings #saveAbout, body.realm-of-celestial-beings #clearEmail, 
-body.realm-of-celestial-beings #clearAbout, body.realm-of-celestial-beings #changePassword {
-   background: transparent;
-   color: #0c0755;
-   border: 2px solid #0c0755;
-}
-body.realm-of-celestial-beings #saveEmail:hover, body.realm-of-celestial-beings #saveAbout:hover, body.realm-of-celestial-beings #changePassword:hover {
-  background: linear-gradient(135deg, #8791c2, #707bb3);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-body.realm-of-celestial-beings #saveEmail:active, body.realm-of-celestial-beings #saveAbout:active, body.realm-of-celestial-beings #changePassword:active {
-  background: rgba(48, 44, 160, 0.1);
-  color: #0c0755;
-  border-color: #0c0755;
-  transform: translateY(-1px);
-}
-body.realm-of-celestial-beings #clearEmail:hover, body.realm-of-celestial-beings #clearAbout:hover {
-  background: rgba(48, 44, 160, 0.1);
-  color: #0c0755;
-  border-color: #0c0755;
-  transform: translateY(-1px);
-}
-body.realm-of-celestial-beings .settings .change-btn.delete, body.realm-of-celestial-beings .settings .change-btn.delete:hover {
-  background: #b0b7d1c7;
-  color: #fff;
-  border-color: #0c0755;
-  border-width: 2px;
-  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
-}
+
 /* Devas */
 body.devas{
   height: 100%;
@@ -736,57 +557,11 @@ body.devas .navbar a{
 body.devas .navbar a:hover{
   background-color: #d7dffab6;
 }
-body.devas .settings .mainc input, body.devas .settings .mainc textarea, body.devas .settings .mainc select {
-   background: #fff0cda5;
+body.devas .intro{
+      background: #ffffffbc;
+      border-top: 2px solid #8498d4f4;
+      border-bottom: 2px solid #8498d4f4;
 }
-body.devas .settings .mainc {
-   background: #ffffffad;
-}
-body.devas .settings .mainc label, body.devas .welcome p{
-   color: #84b5d4f4;
-}
-body.devas .settings .sidebar {
-   background: #f7e4a170;
-}
-body.devas .change-btn {
-   background: #d8c191e3;
-}
-body.devas .settings .change-btn.delete {
-   background: transparent;
-   color: hsl(0, 0%, 0%);
-   border: 1px solid hsl(36, 41%, 37%);
-}
-body.devas #saveEmail, body.devas #saveAbout, body.devas #clearEmail, 
-body.devas #clearAbout, body.devas #changePassword {
-   background: transparent;
-   color: #cfb7617f;
-   border: 2px solid #cfb7617f;
-}
-body.devas #saveEmail:hover, body.devas #saveAbout:hover, body.devas #changePassword:hover {
-  background: linear-gradient(160, 141, 44, 0.1);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-body.devas #saveEmail:active, body.devas #saveAbout:active, body.devas #changePassword:active {
-  background: rgba(160, 141, 44, 0.1);
-  color: #cfb7617f;
-  border-color: #cfb7617f;
-  transform: translateY(-1px);
-}
-body.devas #clearEmail:hover, body.devas #clearAbout:hover {
-  background: rgba(160, 141, 44, 0.1);
-  color: #cfb7617f;
-  border-color: #cfb7617f;
-  transform: translateY(-1px);
-}
-body.devas .settings .change-btn.delete, body.devas .settings .change-btn.delete:hover {
-  background: #d1cab0c7;
-  color: #fff;
-  border-color: #cfb7617f;
-  border-width: 2px;
-  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
-}
-
 /* Balaak */
 body.balaak{
   height: 100%;
@@ -812,56 +587,8 @@ body.balaak .navbar a{
 body.balaak .navbar a:hover{
   background-color: #270707b6;
 }
-body.balaak .settings .mainc input, body.balaak .settings .mainc textarea, body.balaak .settings .mainc select {
-   background: #bc8b89a5;
-}
-body.balaak .settings .mainc {
-   background: #ffffffad;
-}
-body.balaak .settings .mainc label, body.balaak .welcome p{
-   color: #5f0000f4;
-}
-body.balaak .settings{
-  background: #8d6060d1;
-}
-body.balaak .settings .sidebar {
-   background: #4f000070;
-}
-body.balaak .change-btn {
-   background: #420000e3;
-}
-body.balaak .settings .change-btn.delete {
-   background: #d1b0b0c7;
-   color: #5c0000;
-   border: 1px solid hsl(0, 100%, 6%);
-}
-body.balaak #saveEmail, body.balaak #saveAbout, body.balaak #clearEmail, 
-body.balaak #clearAbout, body.balaak #changePassword {
-   background: transparent;
-   color: #420000e3;
-   border: 2px solid #420000e3;
-}
-body.balaak #saveEmail:hover, body.balaak #saveAbout:hover, body.balaak #changePassword:hover {
-  background: linear-gradient(160, 141, 44, 0.1);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-}
-body.balaak #saveEmail:active, body.balaak #saveAbout:active, body.balaak #changePassword:active {
-  background: rgba(160, 44, 44, 0.1);
-  color: #420000e3;
-  border-color: #420000e3;
-  transform: translateY(-1px);
-}
-body.balaak #clearEmail:hover, body.balaak #clearAbout:hover {
-  background: rgba(160, 44, 44, 0.1);
-  color: #420000e3;
-  border-color: #420000e3;
-  transform: translateY(-1px);
-}
-body.balaak .settings .change-btn.delete, body.balaak .settings .change-btn.delete:hover {
-  background: #d1b0b0c7;
-  color: #fff;
-  border-color: #420000e3;
-  border-width: 2px;
-  box-shadow: 0 4px 12px rgba(48, 44, 160, 0.1);
+body.balaak .intro{
+      background: #601a1a56;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
 }
