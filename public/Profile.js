@@ -8,16 +8,19 @@ function resetUI() {
     const fileInput = document.getElementById('fileInput');
     if (fileInput) fileInput.value = "";
 
+    // Resets all body classes and applies the default theme
     document.body.className = "";
     document.body.classList.add("default");
 
 }
 
 function getSavedAccount() {
+    // Retrieves saved account data from localStorage
     const saved = localStorage.getItem('currentAccount');
     if (!saved) return null;
 
     try {
+        // Converts stored string into an object
         return JSON.parse(saved);
     } catch (error) {
         console.error('Failed to parse saved account from localStorage', error);
@@ -26,33 +29,43 @@ function getSavedAccount() {
 }
 
 function markLoggedIn(value) {
+    // Stores login state as a string ("true" or "false")
     localStorage.setItem('isLoggedIn', value ? 'true' : 'false');
 }
 
 function renderAuthenticatedView(account) {
+    // References authentication and settings sections
     const auth = document.querySelector('.auth');
     const settings = document.querySelector('.settings');
+    // Hides login/signup section
     if (auth) auth.classList.add('hidden');
+    // Shows settings/profile section
     if (settings) {
         settings.classList.remove('hidden');
         settings.classList.add('visible');
     }
 
+    // Displays username in UI
     const displayUsername = document.getElementById('displayUsername');
     if (displayUsername) displayUsername.innerText = account.username || '';
 
+    // Displays username in another section
     const dispUser = document.getElementById('dispUser');
     if (dispUser) dispUser.innerText = account.username || 'Username';
 
+    // Displays selected kingdom
     const kingdomLabel = document.getElementById('kingdomLabel');
     if (kingdomLabel) kingdomLabel.innerText = account.kingdom || account.choice || '';
 
+    // Fills email field
     const emailInput = document.getElementById('emailInput');
     if (emailInput) emailInput.value = account.email || '';
 
+    // Fills bio/about field
     const aboutInput = document.getElementById('aboutInput');
     if (aboutInput) aboutInput.value = account.bio || '';
 
+    // Loads avatar from localStorage if available
     const avatar = document.getElementById('avatar');
     if (avatar && account.username) {
     const key = `avatar_${account.username}`;
@@ -65,11 +78,13 @@ function renderAuthenticatedView(account) {
 }
 
 function switchTab(type) {
+    // References signup/login forms and headers
     const signForm = document.getElementById('signForm');
     const logForm = document.getElementById('logForm');
     const hCreate = document.getElementById('hCreate');
     const hLogin = document.getElementById('hLogin');
 
+    // Switches between signup and login UI
     if (type === 'signup') {
         signForm.classList.remove('hidden');
         logForm.classList.add('hidden');
@@ -82,42 +97,50 @@ function switchTab(type) {
         hLogin.classList.add('active');
     }
 }
+
+// This function is the CREATE part of the code
 function signUp() {
     const username = document.getElementById('username').value.trim();
     const password = document.getElementById('pass').value;
     const choice = document.getElementById('choice').value;
-
+    // Checks whether any of the necessary fields are empty
     if (!username || !password || !choice) {
         alert('Please fill in all fields.');
         return;
     }
-
+    // An object that is based on the user input
     const account = {
         username,
         password,
         kingdom: choice,
         choice
     };
-
+    // Converts the object to a string -> stores to the localStorage
     localStorage.setItem('currentAccount', JSON.stringify(account));
+    // Updates UI
     markLoggedIn(true);
     alert('Account created successfully! You are now logged in.');
     renderAuthenticatedView(account);
     showPopUp();
 }
 
+// This function is a READ function
 function logIn() {
     const usernameLogin = document.getElementById('usernameLogin').value.trim();
     const passwordLogin = document.getElementById('passLogin').value;
+    // Gets the existing data in the localStorage
     const saved = localStorage.getItem('currentAccount');
 
     if (!saved) {
+        // Alerts the user that there is no account in the storage; directs them to sign up 
         alert('No account found. Please sign up first.');
         switchTab('signup');
         return;
     }
 
+    // Saved string -> Object (For comparison)
     const account = JSON.parse(saved);
+    // The comparison which makes sure that the details are matched, else the user is asked to retry
     console.log('Profile logIn', { usernameLogin, passwordLogin, savedAccount: account });
     if (account.username === usernameLogin && account.password === passwordLogin) {
         markLoggedIn(true);
@@ -128,23 +151,25 @@ function logIn() {
     }
 }
 function showPopUp() {
-
+    // References UI elements, and gathers stored data
     const modal = document.getElementById("popup");
     const img = document.getElementById("popupImage");
     const text = document.getElementById("popupText");
     const saved = localStorage.getItem("currentAccount");
+    // Ensures that it exists before proceeding
     if (!modal || !img || !text) {
         console.error('Profile popup element missing', { modal, img, text });
         alert('Popup markup is missing or has wrong IDs. Check Profile.html.');
         return;
     }
+    // Reads to see if there is a stored account, else it will alert the user to sign up first
     if (!saved) {
         alert("No account found. Please sign up first.");
         return;
     }
     const account = JSON.parse(saved);
+    // Maps the data based on the kingdom choice, and fills the pop up with the corresponding image and text. If there is no kingdom, it will alert the user to sign up again with a kingdom
     const popUp = {
-
         "Hathoria": {
             img: "../assets/ThePirena.png",
             text: "Hathoria is the kingdom of fire, known for its determined warriors and passionate people."
@@ -162,6 +187,7 @@ function showPopUp() {
             text: "Adamya is the kingdom of water, home to unique inhabitants fitting for the environment."
         }
     };
+    // Choosing which pop up will be shown based on the kingdom choice, and if there is no kingdom, it will alert the user to sign up again with a kingdom
     const kingdom = account.kingdom || account.choice;
     console.log('Profile showPopUp', { account, kingdom, modal, img, text });
     const selected = popUp[kingdom];
@@ -169,6 +195,7 @@ function showPopUp() {
         alert("No kingdom selected. Please sign up again with a kingdom.");
         return;
     }
+    // Fills/forces the pop up to show the corresponding image and texts
     img.src = selected.img;
     text.textContent = selected.text;
     modal.classList.remove('hidden');
@@ -194,6 +221,7 @@ function hideSettings() {
     }
 }
 
+// Removes or signs out from the current user session 
 function signOut() {
     const account = getSavedAccount();
     if (account) {
@@ -210,6 +238,7 @@ function signOut() {
     alert('You have signed out.');
 }
 
+// Fully deletes the user account 
 function deleteAccount() {
     markLoggedIn(false);
     const account = getSavedAccount();
@@ -228,10 +257,13 @@ function deleteAccount() {
     alert('Account deleted. Please sign up again.');
 }
 
+// Standard function for changes and modifications 
 function saveAccountChanges(account) {
+    // Saves the updated account object back to localStorage
     localStorage.setItem('currentAccount', JSON.stringify(account));
 }
 
+// This function consists of Reading, Modifying, Rewriting, and UPDATING the data in the localStorage
 function updateAccountField(field, value) {
     const account = getSavedAccount();
     if (!account) return;
@@ -240,6 +272,7 @@ function updateAccountField(field, value) {
     renderAuthenticatedView(account);
 }
 
+// Allows the user to change their username
 function changeUsername() {
     const newUsername = prompt('Enter your new username:');
     if (!newUsername) return;
@@ -247,6 +280,7 @@ function changeUsername() {
     alert('Username updated.');
 }
 
+// Allows the user to change their password
 function changePassword() {
     const newPassword = prompt('Enter your new password:');
     if (!newPassword) return;
@@ -254,6 +288,7 @@ function changePassword() {
     alert('Password updated.');
 }
 
+// Clears the bio or about me section
 function clearAbout() {
     const aboutInput = document.getElementById('aboutInput');
     if (aboutInput) aboutInput.value = '';
@@ -261,6 +296,7 @@ function clearAbout() {
     alert('Bio cleared.');
 }
 
+// Saves the email
 function saveEmail() {
     const emailInput = document.getElementById('emailInput');
     if (!emailInput) return;
@@ -275,6 +311,7 @@ function saveEmail() {
     alert('Email saved.');
 }
 
+// Clears the email
 function clearEmail() {
     const emailInput = document.getElementById('emailInput');
     if (emailInput) emailInput.value = '';
@@ -282,6 +319,7 @@ function clearEmail() {
     alert('Email deleted.');
 }
 
+// Saves the bio or about me section
 function saveAbout() {
     const aboutInput = document.getElementById('aboutInput');
     if (!aboutInput) return;
@@ -289,6 +327,7 @@ function saveAbout() {
     alert('Bio saved.');
 }
 
+// Allows the user to change their chosen kingdom
 function changeKingdom() {
     const kingdomSelect = document.getElementById('kingdomSelect');
     if (!kingdomSelect) return;
@@ -305,73 +344,90 @@ function changeKingdom() {
     renderAuthenticatedView(account);
     alert('Kingdom updated.');
 }
-// close popup
+
+// Closes the popup
 function closePopUp() {
+    // Gets popup/modal element
     const modal = document.getElementById("popup");
+    // Hides the popup visually and functionally
     modal.classList.add('hidden');
     modal.style.display = "none";
 }
 
+// Handles the avatar upload and preview
 const fileInput = document.getElementById('fileInput');
 const avatar = document.getElementById('avatar');
 const clearAvatarBtn = document.getElementById('clearAvatar');
 function getAvatarKey() {
+    // Generates a unique key for storing avatar per user
     const account = getSavedAccount();
     return account ? `avatar_${account.username}` : "avatar_guest";
 }
 
-//upload or replace avatar
+// Upload or replace the avatar
 fileInput.addEventListener('change', function () {
+    // Gets selected file from input
     const file = this.files ? this.files[0] : null;
     const avatar = document.getElementById('avatar');
 
+    // Stops if no file or avatar element
     if (!file || !avatar) return;
     const reader = new FileReader();
     reader.onload = function (e) {
         const imageData = e.target.result;
+        // Updates avatar preview
         avatar.src = imageData;
+        // Saves avatar in localStorage
         const key = getAvatarKey();
         localStorage.setItem(key, imageData);
     };
+    // Starts reading the file
     reader.readAsDataURL(file);
 });
 
-//delete avatar
+// Deletes the avatar
 clearAvatarBtn.addEventListener('click', function () {
     const avatar = document.getElementById('avatar');
     const key = getAvatarKey();
 
+    // Resets avatar to default image
     if (avatar) {
         avatar.src = "../assets/placeholder.jpg";
     }
+    // Clears file input and removes stored avatar
     fileInput.value = "";
     localStorage.removeItem(key);
 });
 
 window.addEventListener("DOMContentLoaded", () => {
+    // Checks storage to see if there is saved account/session
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
     const account = getSavedAccount();
 
-    // apply theme
+    // Applies the theme
     if (account && account.activeTheme) {
         document.body.className = account.activeTheme;
     } else {
         document.body.className = "default";
     }
 
-    // load avatar
+    // Loads the avatar
     const avatar = document.getElementById('avatar');
     if (account && avatar) {
         const key = `avatar_${account.username}`;
         const savedAvatar = localStorage.getItem(key);
+        // Sets avatar image or fallback
         avatar.src = savedAvatar ? savedAvatar : "../assets/placeholder.jpg";
     }
 
-    // login state
+    // Login state
     if (isLoggedIn && account) {
+        // Recognizes the user, allowing them to access the profile
         renderAuthenticatedView(account);
     } else {
+        // No recognized user, redirecting them to sign up first before accessing the profile
         switchTab('signup');
+        // Hides settings if not logged in
         const settings = document.querySelector('.settings');
         if (settings) settings.classList.add('hidden');
     }
